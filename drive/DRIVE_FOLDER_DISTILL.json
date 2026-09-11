@@ -1,0 +1,184 @@
+{
+  "as_of": "2026-09-11T09:45Z",
+  "ceiling": "PUBLIC TITLE INDEX + selective text distill \u00b7 NEVER keys.env / god_tier_keys.env / fourth_round.env bodies",
+  "folders": {
+    "Investigations": {
+      "id": "1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd",
+      "children_folders": [
+        "Epstein specific",
+        "Epstein's shit",
+        "Hypothesis",
+        "recap"
+      ]
+    },
+    "Epstein specific": {
+      "id": "1SA5nr41oUDSwOS2bFzVAKj-baWombpaV",
+      "subfolders": [
+        "30 swarms",
+        "4 fuckers",
+        "API BUILD",
+        "Middlebury",
+        "Palm Beach Pete",
+        "Recap latest",
+        "Swarm copies"
+      ],
+      "files_title_index": [
+        {
+          "name": "epstein all pdfs archive link.txt",
+          "kind": "url",
+          "status": "INGESTED",
+          "note": "IA EpsteinDocs"
+        },
+        {
+          "name": "Epstein-Maxwell-timeline.pdf",
+          "kind": "pdf",
+          "status": "TITLE+prior distill"
+        },
+        {
+          "name": "The Epstein Maxwell True Story CORE.txt/.pdf",
+          "kind": "text",
+          "status": "INGESTED public text"
+        },
+        {
+          "name": "PART1..PART5 .txt",
+          "kind": "text",
+          "status": "INGEST title (text short)"
+        },
+        {
+          "name": "NPA DocumentCloud PDFs",
+          "kind": "pdf",
+          "status": "TITLE INDEX (public filing mirror)"
+        },
+        {
+          "name": "Robert Maxwell Epstein BARAK CONNECTIONS.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "jeffrey-epstein-documents-full.PDF",
+          "kind": "pdf_bulk",
+          "status": "TITLE ONLY ~24MB \u2014 no bulk ingest"
+        },
+        {
+          "name": "Jeffrey Epstein Part 22 of 22.pdf",
+          "kind": "pdf_bulk",
+          "status": "TITLE ONLY ~17MB"
+        },
+        {
+          "name": "All Documents - Epstein Archive.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Geneanet family tree PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "hidden epstein files archive search PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "janet epstein crossover.pdf",
+          "kind": "pdf",
+          "status": "TITLE \u2014 name collision research"
+        },
+        {
+          "name": "Black Book torrent stub",
+          "kind": "torrent",
+          "status": "METADATA ONLY never fetch content"
+        }
+      ]
+    },
+    "Hypothesis": {
+      "id": "12qvSRkkrryS2h6NcCq9Rw5nflzUwNK3-",
+      "files_title_index": [
+        {
+          "name": "DISCOVERY_METHODS.txt",
+          "status": "INGESTED"
+        },
+        {
+          "name": "INVESTIGATION_PROCEDURES.txt",
+          "status": "INGESTED"
+        },
+        {
+          "name": "theories.txt",
+          "status": "INGESTED \u2014 mostly Janet name-collision notes"
+        },
+        {
+          "name": "MY THEORIES.pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "File_01_Full THEORIES.pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Peter Simel = J-WPS / Just1.pdf",
+          "status": "TITLE \u2014 PBP CONTRADICTED track"
+        },
+        {
+          "name": "Epstein-Maxwell-timeline.pdf",
+          "status": "dup"
+        },
+        {
+          "name": "maindata.pdf / maindata part2.pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "swarm agent PDFs",
+          "status": "TITLE INDEX ops"
+        }
+      ]
+    },
+    "recap": {
+      "id": "1W-eWIFR5MGh568GrkaxDhVSpzrXNBd9w",
+      "files_title_index": [
+        {
+          "name": "masterrrrrr.pdf / masterrrrrr2222222.pdf",
+          "status": "TITLE INDEX large recap"
+        },
+        {
+          "name": "swarm api MASTER txt/pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "start1..start10.pdf series",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "The Seed Story-linkedddddd.pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "MSPDF.PDF",
+          "status": "TITLE INDEX"
+        }
+      ]
+    },
+    "Epstein's shit": {
+      "id": "15E9DNfYwo2JvnEQsnt_yFvZIgKIUegmD",
+      "note": "Contains mixed code + SECRET env files \u2014 BLOCK secrets",
+      "blocked_never_ingest": [
+        "keys.env",
+        "god_tier_keys.env",
+        "fourth_round.env",
+        "Key_loader_beast.py (key loader)"
+      ],
+      "public_ok_title_index": [
+        "blackhat_swarm.py",
+        "ghost_swarm.py",
+        "hydra_*.py",
+        "hunter.py",
+        "main.py",
+        "deploy.sh",
+        "Epstein's 4.pdf",
+        "WPS Office PDF dumps",
+        "param.json",
+        "providers.json"
+      ]
+    }
+  },
+  "public_archive_url": "https://ia600705.us.archive.org/21/items/epsteindocs/"
+}
