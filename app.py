@@ -422,14 +422,13 @@ elif section == "Sources and export":
 
 else:  # Audio panel
     st.subheader("Audio panel")
-    audio_path = ROOT / "audio" / "theories-plausibility-panel-15min.mp3"
+    audio_path = ROOT / "audio" / "theories-plausibility-panel-RAW-15min.mp3"
     st.markdown(
         """
 <div class="block">
 <p>Multi-speaker discussion of vault <b>hypotheses and operator theories only</b>, focused on whether
 each claim could be plausible, what public facts support or limit it, and where evidence is missing.
-This is synthetic multi-voice analysis grounded in the vault export and public reporting — not a live
-recording of external people, and not a verdict.</p>
+Raw multi-voice cut: casual speech, emotion, profanity. Same theories, no stiff formal voice. Synthetic roles, not live external people.</p>
 </div>
 """,
         unsafe_allow_html=True,
@@ -438,8 +437,8 @@ recording of external people, and not a verdict.</p>
         st.audio(str(audio_path))
         st.caption(f"File: {audio_path.name} · size {audio_path.stat().st_size // 1024} KB")
     else:
-        st.warning("Audio file not found yet. Generate and place theories-plausibility-panel-15min.mp3 in audio/.")
-    script_path = ROOT / "audio" / "theories-plausibility-panel-SCRIPT.md"
+        st.warning("Audio file not found yet. Generate and place theories-plausibility-panel-RAW-15min.mp3 in audio/.")
+    script_path = ROOT / "audio" / "theories-plausibility-panel-RAW-SCRIPT.md"
     if script_path.exists():
         with st.expander("Panel script (text)"):
             st.markdown(script_path.read_text()[:50000])
