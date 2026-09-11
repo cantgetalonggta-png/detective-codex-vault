@@ -1,23 +1,26 @@
-# Detective Codex (book / old video-game style) v1.2
+# Detective Codex Vault
 
-Interactive investigation desk replacing the world-map Meridian UI for day-to-day case work.
+Book / old video-game style investigation desk for the operator vault (public metadata only).
 
-## Contents
-- Every person (45), entity (20), location (30), role, tag, status
-- 9 hypotheses (yellow/red) with deep arcs
-- 10 individual operator theories from MY THEORIES.pdf
-- Theory web + narrative control (your spine)
-- Full Drive folder distill (Investigations → Epstein specific / Epstein's shit / Hypothesis / recap + subfolders)
-- Document distills for CORE, PART1-5, DM, procedures, MY THEORIES, etc.
-- Secrets BLOCKED (keys.env, god_tier_keys, fourth_round, API keys)
+## Live app (v2.0.0-globe-desk)
 
 ```bash
-streamlit run /workspace/artifacts/detective-codex/app.py --server.port 8502 --server.address 0.0.0.0 --server.headless true
+streamlit run app.py --server.port 8080 --server.address 0.0.0.0 --server.headless true
 ```
 
-## Dual-persist
-- GitHub: https://github.com/cantgetalonggta-png/detective-codex-vault
-- Drive: https://drive.google.com/drive/folders/1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d
+- Local: http://127.0.0.1:8080
+- Network: http://172.16.0.2:8080
 
-## Ceiling
-PUBLIC only · no secrets · PBP CONTRADICTED · no victim photos
+### Features
+- Chapter radio (book/RPG codex)
+- Investigator **command console**
+- **Orthographic globe** (locations + pipeline arcs)
+- **Hypothesis constellation** (yellow / red / green)
+- Full `data/FULL_EXPORT.json` wired (people, entities, locations, hyps, theories, arcs, timeline, Drive distill)
+
+### Ceiling
+PUBLIC RECORD + vault document metadata only · no secrets · no CSAM · no victim photos · **PBP identity CONTRADICTED** · Meridian RETIRED
+
+### Dual-persist
+- GitHub: https://github.com/cantgetalonggta-png/detective-codex-vault
+- Drive folder: detective-codex-2026-09-11 (pointers; full bodies on GitHub)
