@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-09-11T10:20Z",
+  "version": "1.2.0-deep-dual-persist",
+  "dual_persist": {
+    "github": {
+      "repo": "cantgetalonggta-png/detective-codex-vault",
+      "url": "https://github.com/cantgetalonggta-png/detective-codex-vault",
+      "prior_status": "PRESENT (README, app.py, FULL_EXPORT, drive distill) as of 2026-09-11T09:48Z",
+      "this_run": "RE-PUSH v1.2.0-deep"
+    },
+    "drive": {
+      "folder": "detective-codex-2026-09-11",
+      "id": "1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d",
+      "url": "https://drive.google.com/drive/folders/1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d",
+      "prior_status": "FOLDER EXISTS BUT WAS EMPTY \u2014 root cause of 'nothing on Drive'",
+      "this_run": "UPLOAD all export artifacts now"
+    },
+    "why_user_saw_nothing": [
+      "GitHub repo DID have files; user may not have checked cantgetalonggta-png/detective-codex-vault",
+      "Drive folder detective-codex-2026-09-11 was created but list_folder returned ZERO files \u2014 uploads never landed",
+      "Sandbox FS flakiness previously wiped local ROOT_CASE; dual-persist must be verified after every write"
+    ]
+  },
+  "stats": {
+    "n_people": 45,
+    "n_entities": 20,
+    "n_locations": 30,
+    "n_hypotheses": 9,
+    "n_my_theories_individual": 10,
+    "n_arcs_deep": 32,
+    "n_drive_folders_indexed": 8,
+    "n_document_distills": 9,
+    "n_timeline": 17,
+    "n_dm": 10,
+    "n_logic": 10
+  },
+  "hypothesis_status_summary": {
+    "yellow_open": [
+      "HYP-EF-FEEDER",
+      "HYP-WEXNER-MAXWELL",
+      "HYP-DALTON-ORIGIN",
+      "HYP-E66-VERTICAL",
+      "HYP-CLEANUP-DEATHS",
+      "HYP-ACOSTA-SHIELD",
+      "HYP-DUBAI-PIVOT",
+      "HYP-DRIVE-WIPE"
+    ],
+    "red_contradicted": [
+      "HYP-PBP-IDENTITY"
+    ],
+    "n_yellow": 8,
+    "n_red": 1
+  },
+  "never_list": [
+    "keys.env",
+    "god_tier_keys.env",
+    "fourth_round.env",
+    "api-keys-secret-store",
+    "CSAM",
+    "doxx private living",
+    "H11 contact without HITL",
+    "promote PBP identity as RS",
+    "AI photoreal of victims",
+    "bulk secret ingest"
+  ],
+  "app": "detective-codex",
+  "port": 8502,
+  "meridian": "RETIRING"
+}

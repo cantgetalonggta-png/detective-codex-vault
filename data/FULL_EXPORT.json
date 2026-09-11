@@ -1,20 +1,80 @@
 {
   "id": "DETECTIVE-CODEX-FULL-EXPORT",
-  "title": "Detective Codex \u2014 Full vault export (every name/entity/location/role)",
-  "as_of": "2026-09-11T09:50Z",
-  "version": "1.0.0-codex",
-  "ceiling": "PUBLIC RECORD + your document metadata \u00b7 no secrets \u00b7 no CSAM \u00b7 no victim photos \u00b7 PBP CONTRADICTED",
+  "title": "Detective Codex — Full vault export (every name/entity/location/role + deep distill + arcs + narrative)",
+  "as_of": "2026-09-11T10:20Z",
+  "version": "1.2.0-deep-dual-persist",
+  "ceiling": "PUBLIC RECORD + your document metadata · no secrets · no CSAM · no victim photos · PBP CONTRADICTED",
   "why_dual_persist_lagged": [
-    "Earlier sessions built local artifacts under /workspace/artifacts but dual-persist was interrupted by process kills / FS flakiness",
-    "ROOT_CASE and investigation-complete paths later disappeared from sandbox disk \u2014 confirms need for GitHub+Drive every major step",
-    "This export forces both GitHub push and Drive upload now"
+    "GitHub repo DID have files; user may not have checked cantgetalonggta-png/detective-codex-vault",
+    "Drive folder detective-codex-2026-09-11 was created but list_folder returned ZERO files — uploads never landed",
+    "Sandbox FS flakiness previously wiped local ROOT_CASE; dual-persist must be verified after every write"
   ],
   "stats": {
-    "n_people": 41,
+    "n_people": 45,
     "n_entities": 20,
     "n_locations": 30,
-    "n_hypotheses": 7,
-    "n_drive_folders_indexed": 5
+    "n_hypotheses": 9,
+    "n_my_theories_individual": 10,
+    "n_arcs_deep": 32,
+    "n_drive_folders_indexed": 8,
+    "n_document_distills": 9,
+    "n_timeline": 17,
+    "n_dm": 10,
+    "n_logic": 10
+  },
+  "status_board": {
+    "as_of": "2026-09-11T10:20Z",
+    "dual_persist": {
+      "github": {
+        "repo": "cantgetalonggta-png/detective-codex-vault",
+        "url": "https://github.com/cantgetalonggta-png/detective-codex-vault",
+        "prior_status": "PRESENT (README, app.py, FULL_EXPORT, drive distill) as of 2026-09-11T09:48Z",
+        "this_run": "RE-PUSH v1.2.0-deep"
+      },
+      "drive": {
+        "folder": "detective-codex-2026-09-11",
+        "id": "1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d",
+        "url": "https://drive.google.com/drive/folders/1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d",
+        "prior_status": "FOLDER EXISTS BUT WAS EMPTY — root cause of 'nothing on Drive'",
+        "this_run": "UPLOAD all export artifacts now"
+      },
+      "why_user_saw_nothing": [
+        "GitHub repo DID have files; user may not have checked cantgetalonggta-png/detective-codex-vault",
+        "Drive folder detective-codex-2026-09-11 was created but list_folder returned ZERO files — uploads never landed",
+        "Sandbox FS flakiness previously wiped local ROOT_CASE; dual-persist must be verified after every write"
+      ]
+    },
+    "hypothesis_status_summary": {
+      "yellow_open": [
+        "HYP-EF-FEEDER",
+        "HYP-WEXNER-MAXWELL",
+        "HYP-DALTON-ORIGIN",
+        "HYP-E66-VERTICAL",
+        "HYP-CLEANUP-DEATHS",
+        "HYP-ACOSTA-SHIELD",
+        "HYP-DUBAI-PIVOT",
+        "HYP-DRIVE-WIPE"
+      ],
+      "red_contradicted": [
+        "HYP-PBP-IDENTITY"
+      ],
+      "n_yellow": 8,
+      "n_red": 1
+    },
+    "never_list": [
+      "keys.env",
+      "god_tier_keys.env",
+      "fourth_round.env",
+      "api-keys-secret-store",
+      "CSAM",
+      "doxx private living",
+      "H11 contact without HITL",
+      "promote PBP identity as RS",
+      "AI photoreal of victims",
+      "bulk secret ingest"
+    ],
+    "app_status": "detective-codex book/RPG style on port 8502 · Meridian world-map RETIRING",
+    "next": "After dual-persist verified → delete/retire original world-map Meridian · keep building interactive detective investigations"
   },
   "people": [
     {
@@ -31,7 +91,7 @@
       ],
       "tag": "RS biography+convictions",
       "color": "green",
-      "window": "1953\u20132019",
+      "window": "1953–2019",
       "locations": [
         "Brooklyn/NYC",
         "Palm Beach El Brillo",
@@ -45,7 +105,9 @@
         "MX-03",
         "DW-05",
         "AU-06"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-GMX",
@@ -58,7 +120,7 @@
       ],
       "tag": "RS conviction",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "London",
         "NYC",
@@ -67,7 +129,9 @@
       "pipelines": [
         "MX-03",
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-RMX",
@@ -79,14 +143,16 @@
       ],
       "tag": "RS death 1991; MAYBE intel framing",
       "color": "yellow",
-      "window": "\u20131991",
+      "window": "–1991",
       "locations": [
         "London",
         "Canaries"
       ],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-LWX",
@@ -108,7 +174,9 @@
       "pipelines": [
         "MX-03",
         "DW-05"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-JLB",
@@ -120,20 +188,22 @@
       ],
       "tag": "RS death 2022; RS flight-log orbit",
       "color": "green",
-      "window": "\u20132022",
+      "window": "–2022",
       "locations": [
         "Paris"
       ],
       "pipelines": [
         "EF-02",
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-NMC",
       "name": "Nadia Marcinko",
       "aliases": [
-        "Na\u010fa Marcinkov\u00e1",
+        "Naďa Marcinková",
         "N. Marcinko",
         "Nadazia"
       ],
@@ -144,19 +214,22 @@
       ],
       "tag": "mix RS/MAYBE",
       "color": "yellow",
-      "window": "1986\u2013",
+      "window": "1986–",
       "locations": [
-        "Ko\u0161ice",
+        "Košice",
         "Palm Beach",
         "USVI"
       ],
       "pipelines": [
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active",
+      "notes": "Named public pilot/associate orbit; operator dialect/continuity claims = MAYBE"
     },
     {
       "id": "P-ZNV",
-      "name": "Zuzana Nov\u00e1kov\u00e1",
+      "name": "Zuzana Nováková",
       "aliases": [
         "Zuzana Novak"
       ],
@@ -165,14 +238,17 @@
       ],
       "tag": "MAYBE",
       "color": "yellow",
-      "window": "1996\u20132000",
+      "window": "1996–2000",
       "locations": [
         "Bratislava",
         "Paris"
       ],
       "pipelines": [
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active",
+      "notes": "Operator investigation claim node — MAYBE until public exhibit chain"
     },
     {
       "id": "P-PMC",
@@ -186,14 +262,17 @@
       ],
       "tag": "MAYBE",
       "color": "yellow",
-      "window": "1998\u20132000",
+      "window": "1998–2000",
       "locations": [
         "Kyiv",
         "Slovakia"
       ],
       "pipelines": [
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active",
+      "notes": "Operator investigation claim node — MAYBE until public exhibit chain"
     },
     {
       "id": "P-ACA",
@@ -211,7 +290,9 @@
       ],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-DIN",
@@ -222,13 +303,15 @@
       ],
       "tag": "RS public filings / DOJ diagram",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "NYC 301 E66"
       ],
       "pipelines": [
         "E66-01"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-RKH",
@@ -239,13 +322,15 @@
       ],
       "tag": "RS DOJ diagram",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "NYC"
       ],
       "pipelines": [
         "E66-01"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-LGR",
@@ -256,14 +341,16 @@
       ],
       "tag": "RS public reporting",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "NYC"
       ],
       "pipelines": [
         "E66-01",
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-SKL",
@@ -274,14 +361,16 @@
       ],
       "tag": "RS NPA orbit named",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "NYC"
       ],
       "pipelines": [
         "E66-01",
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-ARS",
@@ -292,11 +381,13 @@
       ],
       "tag": "RS named public",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-DBR",
@@ -314,7 +405,9 @@
       "pipelines": [
         "DW-05",
         "E66-01"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-SFS",
@@ -329,7 +422,9 @@
       "locations": [],
       "pipelines": [
         "DW-05"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-EBG",
@@ -341,14 +436,16 @@
       ],
       "tag": "RS press/association; unit MAYBE",
       "color": "yellow",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "NYC 301 E66 unit notes"
       ],
       "pipelines": [
         "E66-01",
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-ADR",
@@ -360,11 +457,13 @@
       ],
       "tag": "RS named filings/press; disputes public",
       "color": "yellow",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-PAN",
@@ -376,11 +475,13 @@
       ],
       "tag": "RS public association",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-BCL",
@@ -390,13 +491,15 @@
         "former US President",
         "flight-log passenger public"
       ],
-      "tag": "RS flight logs; association\u2260conviction",
+      "tag": "RS flight logs; association≠conviction",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-HCL",
@@ -414,7 +517,9 @@
       ],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-MMD",
@@ -426,13 +531,15 @@
       ],
       "tag": "RS death; physics MAYBE",
       "color": "yellow",
-      "window": "\u20132022",
+      "window": "–2022",
       "locations": [
         "Arkansas"
       ],
       "pipelines": [
         "MX-03"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-AGN",
@@ -449,7 +556,9 @@
       ],
       "pipelines": [
         "DW-05"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-MRE",
@@ -467,7 +576,9 @@
       "pipelines": [
         "PBP-04",
         "DW-05"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-PEL",
@@ -486,7 +597,9 @@
       ],
       "pipelines": [
         "PBP-04"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-PBS",
@@ -500,14 +613,17 @@
       ],
       "tag": "CONTRADICTED as Epstein identity",
       "color": "red",
-      "window": "1955\u2013",
+      "window": "1955–",
       "locations": [
         "NYC",
         "Palm Beach orbit"
       ],
       "pipelines": [
         "PBP-04"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "CONTRADICTED_identity_track",
+      "verdict": "Identity = Epstein CONTRADICTED — hygiene only"
     },
     {
       "id": "P-AEG",
@@ -519,13 +635,15 @@
       ],
       "tag": "RS public; DM-6 pattern only",
       "color": "yellow",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "NY"
       ],
       "pipelines": [
         "PBP-04"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-HBL",
@@ -536,11 +654,13 @@
       ],
       "tag": "RS public diagram",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "E66-01"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-HRO",
@@ -551,11 +671,13 @@
       ],
       "tag": "RS NYT recruitment system",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-ROH",
@@ -566,11 +688,13 @@
       ],
       "tag": "RS press",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-TVS",
@@ -582,12 +706,14 @@
       ],
       "tag": "RS",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "AU-06",
         "EF-02"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-SNU",
@@ -598,13 +724,15 @@
       ],
       "tag": "MAYBE orbit bookmark",
       "color": "yellow",
-      "window": "\u2013",
+      "window": "–",
       "locations": [
         "Columbus"
       ],
       "pipelines": [
         "PO-08"
-      ]
+      ],
+      "photo_policy": "NEVER victim photos · public figure press only",
+      "status": "active"
     },
     {
       "id": "P-VGG",
@@ -615,12 +743,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VTH",
@@ -631,12 +760,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VCS",
@@ -647,12 +777,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VMF",
@@ -663,12 +794,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VAF",
@@ -679,12 +811,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VCD",
@@ -695,12 +828,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VJS",
@@ -711,12 +845,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VSR",
@@ -727,12 +862,13 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
     },
     {
       "id": "P-VML",
@@ -743,12 +879,91 @@
       ],
       "tag": "RS public naming",
       "color": "green",
-      "window": "\u2013",
+      "window": "–",
       "locations": [],
       "pipelines": [
         "EF-02"
       ],
-      "photo_policy": "never"
+      "photo_policy": "never",
+      "status": "active"
+    },
+    {
+      "id": "P-OLH",
+      "name": "Olha Kovalenko",
+      "aliases": [],
+      "roles": [
+        "visa/logistics node (operator claim)"
+      ],
+      "tag": "MAYBE Dubai/Kintetsu pivot",
+      "color": "yellow",
+      "window": "2022+",
+      "locations": [
+        "Dubai",
+        "Kyiv"
+      ],
+      "pipelines": [
+        "PO-08"
+      ],
+      "status": "open_MAYBE",
+      "photo_policy": "no AI likeness"
+    },
+    {
+      "id": "P-MKO",
+      "name": "Maria Kovalchuk",
+      "aliases": [],
+      "roles": [
+        "named in operator Dubai endpoint notes"
+      ],
+      "tag": "MAYBE endpoint · public abuse case notes only",
+      "color": "yellow",
+      "window": "2025",
+      "locations": [
+        "Dubai"
+      ],
+      "pipelines": [
+        "PO-08"
+      ],
+      "status": "open_MAYBE",
+      "photo_policy": "NEVER victim photos"
+    },
+    {
+      "id": "P-STA",
+      "name": "Stank / Čič (MoD waivers)",
+      "aliases": [
+        "Stank",
+        "Čič"
+      ],
+      "roles": [
+        "Slovak MoD waiver names in operator CORE"
+      ],
+      "tag": "MAYBE operator claim",
+      "color": "yellow",
+      "window": "1999-2000",
+      "locations": [
+        "Slovakia"
+      ],
+      "pipelines": [
+        "EF-02"
+      ],
+      "status": "open_MAYBE"
+    },
+    {
+      "id": "P-SNU2",
+      "name": "Salvatore Nuara",
+      "aliases": [],
+      "roles": [
+        "VS executive orbit press"
+      ],
+      "tag": "RS press orbit bookmark",
+      "color": "yellow",
+      "window": "—",
+      "locations": [
+        "NYC"
+      ],
+      "pipelines": [
+        "PO-08"
+      ],
+      "status": "bookmark"
     }
   ],
   "entities": [
@@ -817,7 +1032,7 @@
       "id": "E-DALTON",
       "name": "Dalton School",
       "type": "school",
-      "role": "1974\u201376 hire node",
+      "role": "1974–76 hire node",
       "tag": "RS",
       "pipelines": [
         "DW-05"
@@ -917,7 +1132,7 @@
       "id": "E-PBP",
       "name": "Palm Beach Police",
       "type": "agency",
-      "role": "2005\u201308 probe",
+      "role": "2005–08 probe",
       "tag": "RS",
       "pipelines": [
         "PBP-04"
@@ -925,7 +1140,7 @@
     },
     {
       "id": "E-DOJ",
-      "name": "DOJ 2025\u201326 dumps",
+      "name": "DOJ 2025–26 dumps",
       "type": "government_release",
       "role": "page dumps / redactions",
       "tag": "RS dump exists",
@@ -1026,7 +1241,7 @@
     },
     {
       "id": "L-KOSICE",
-      "name": "Ko\u0161ice Slovakia",
+      "name": "Košice Slovakia",
       "lat": 48.7164,
       "lon": 21.2611,
       "stage": "lead",
@@ -1294,17 +1509,17 @@
   "hypotheses": [
     {
       "id": "HYP-EF-FEEDER",
-      "name": "Eastern feeder chain",
+      "name": "Eastern feeder chain (Nadia engine)",
       "color": "yellow",
       "status": "open_MAYBE",
       "confidence": 0.55,
-      "theory": "Recruiter Zuzana/Karin \u2192 fixer Peter Marcinko \u2192 pilot Nadia \u2192 scout Brunel/MC2 \u2192 island. Dialect bleed Nadazia\u2192Lolita (DM-9).",
+      "theory": "Operator spine: Zuzana/Karin recruiter → Peter Marcinko fixer/avionics → Nadia pilot continuity → Brunel/MC2 scout → island/end. Dialect bleed Nadazia→Lolita (DM-9 + MY-TH-03). RS anchors: named public Nadia/Brunel/Karin orbit, flight logs. Operator continuity/Nastia fusion = MAYBE.",
       "supporting": [
         "DOC-CORE",
         "DOC-PART1-5",
-        "DOC-TIMELINE",
-        "DOC-NPA",
-        "DOC-DM"
+        "DOC-DM",
+        "DOC-MY-THEORIES",
+        "DOC-NPA"
       ],
       "contradicting": [],
       "entities": [
@@ -1318,7 +1533,10 @@
         "L-BRAT",
         "L-KYIV",
         "L-PARIS",
-        "L-LSJ"
+        "L-LSJ",
+        "E-KARIN",
+        "E-MC2",
+        "E-EXPRESS"
       ],
       "timeline": [
         "1986",
@@ -1333,45 +1551,115 @@
       "ties_to": [
         "HYP-WEXNER-MAXWELL",
         "HYP-CLEANUP-DEATHS",
-        "HYP-E66-VERTICAL"
+        "HYP-ACOSTA-SHIELD",
+        "HYP-DUBAI-PIVOT",
+        "TH-03-NADIA-ENGINE"
       ],
       "gaps": [
-        "O-1 public docket",
-        "MC2 Wayback",
-        "IA flight-log titles"
+        "Public exhibit chain for recruiter/fixer nodes beyond press/aliases",
+        "Nadia 2024 missing = reporting status not closed"
+      ],
+      "arcs_deep": [
+        {
+          "from": "P-ZNV",
+          "to": "P-NMC",
+          "type": "recruiter→pilot",
+          "tag": "MAYBE",
+          "detail": "Karin payroll / Slovak forum claims in CORE"
+        },
+        {
+          "from": "P-PMC",
+          "to": "P-NMC",
+          "type": "fixer/consent/avionics",
+          "tag": "MAYBE",
+          "detail": "Marcinkov/Marchenko aliases + MoD waiver names"
+        },
+        {
+          "from": "P-NMC",
+          "to": "E-EXPRESS",
+          "type": "pilot_orbit",
+          "tag": "mix RS/MAYBE",
+          "detail": "Public pilot association + operator dialect marker"
+        },
+        {
+          "from": "P-JLB",
+          "to": "E-MC2",
+          "type": "agency",
+          "tag": "RS press",
+          "detail": "MC2 / Karin scout public"
+        },
+        {
+          "from": "P-NMC",
+          "to": "L-LSJ",
+          "type": "destination_orbit",
+          "tag": "MAYBE",
+          "detail": "pipeline end claim"
+        }
       ]
     },
     {
       "id": "HYP-WEXNER-MAXWELL",
-      "name": "Wexner\u2013Maxwell crossover (DM-1)",
+      "name": "Wexner–Maxwell crossover (DM-1)",
       "color": "yellow",
       "status": "open_MAYBE",
       "confidence": 0.45,
-      "theory": "Zero-background control of billions; 1986 meet \u2192 1991 PoA cross-timed with Robert Maxwell death. Separate RS dates from leverage hypothesis.",
+      "theory": "Zero-background control of billions; 1986 meet → 1991 PoA cross-timed with Robert Maxwell death. Separate RS dates from leverage hypothesis. MY-TH-02 Pergamon ads as proto-lure (operator).",
       "supporting": [
         "DOC-DM",
         "DOC-TIMELINE",
-        "DOC-CORE"
+        "DOC-CORE",
+        "DOC-MY-THEORIES"
       ],
       "contradicting": [],
       "entities": [
         "P-LWX",
         "P-RMX",
         "P-GMX",
-        "P-JEP"
+        "P-JEP",
+        "E-LB",
+        "E-PERG",
+        "L-COLUMBUS",
+        "L-NYC-CASH",
+        "L-CANARY"
       ],
       "timeline": [
         "1986",
+        "1987",
         "1991"
       ],
       "pipeline": "DW-05",
       "ties_to": [
         "HYP-DALTON-ORIGIN",
         "HYP-EF-FEEDER",
-        "HYP-CLEANUP-DEATHS"
+        "HYP-CLEANUP-DEATHS",
+        "TH-02-PERGAMON"
       ],
       "gaps": [
-        "Additional public PoA exhibits only"
+        "Additional public PoA exhibits only",
+        "Pergamon ad claims operator-archive"
+      ],
+      "arcs_deep": [
+        {
+          "from": "P-LWX",
+          "to": "P-JEP",
+          "type": "PoA/cash",
+          "tag": "RS PoA facts; MAYBE leverage story",
+          "detail": "public PoA era reporting"
+        },
+        {
+          "from": "P-RMX",
+          "to": "P-GMX",
+          "type": "inheritance_hinge",
+          "tag": "RS death date; MAYBE intel framing",
+          "detail": "1991 yacht death"
+        },
+        {
+          "from": "P-GMX",
+          "to": "P-JEP",
+          "type": "partnership",
+          "tag": "RS conviction+association",
+          "detail": "public record"
+        }
       ]
     },
     {
@@ -1380,7 +1668,7 @@
       "color": "yellow",
       "status": "open_MAYBE",
       "confidence": 0.4,
-      "theory": "1974\u201376 hire under Barr; Semel interviews. Do not equate school years to later crimes without evidence.",
+      "theory": "1974–76 hire under Barr; Semel interviews. Do not equate school years to later crimes without evidence.",
       "supporting": [
         "DOC-DM",
         "DOC-TIMELINE"
@@ -1390,7 +1678,8 @@
         "P-JEP",
         "P-DBR",
         "P-SFS",
-        "L-DALTON"
+        "L-DALTON",
+        "E-DALTON"
       ],
       "timeline": [
         "1974-76"
@@ -1401,6 +1690,22 @@
       ],
       "gaps": [
         "Public employment verification only"
+      ],
+      "arcs_deep": [
+        {
+          "from": "P-DBR",
+          "to": "P-JEP",
+          "type": "hire",
+          "tag": "RS era",
+          "detail": "Dalton head hire window"
+        },
+        {
+          "from": "P-SFS",
+          "to": "P-JEP",
+          "type": "historian_interview",
+          "tag": "RS interview existence",
+          "detail": "Semel public comments"
+        }
       ]
     },
     {
@@ -1411,7 +1716,6 @@
       "confidence": 0.75,
       "theory": "ACRIS multi-party, Indyke orbit, BC-PIPE unit crumbs. RS exhibits exist; unit notes mix.",
       "supporting": [
-        "DOC-1953",
         "DOC-MASTER",
         "DOC-IA"
       ],
@@ -1424,7 +1728,8 @@
         "P-EBG",
         "E-301",
         "E-ACRIS",
-        "L-301E66"
+        "L-301E66",
+        "E-9E71"
       ],
       "timeline": [
         "2000",
@@ -1440,6 +1745,29 @@
       "gaps": [
         "FU-020 ACRIS deeds",
         "FU-012 unit list"
+      ],
+      "arcs_deep": [
+        {
+          "from": "E-ACRIS",
+          "to": "E-301",
+          "type": "registry",
+          "tag": "RS",
+          "detail": "multi-party public records system"
+        },
+        {
+          "from": "P-DIN",
+          "to": "E-301",
+          "type": "estate_orbit",
+          "tag": "RS filings",
+          "detail": "DOJ diagram orbit"
+        },
+        {
+          "from": "P-EBG",
+          "to": "E-9E71",
+          "type": "unit_notes",
+          "tag": "MAYBE unit notes",
+          "detail": "BC-PIPE-003"
+        }
       ]
     },
     {
@@ -1448,17 +1776,21 @@
       "color": "yellow",
       "status": "open_MAYBE",
       "confidence": 0.25,
-      "theory": "Brunel 2022 / Middleton 2022 deaths are RS events; staged-physics narratives = MAYBE only. Body-double claims for GMX = media MAYBE.",
+      "theory": "Brunel 2022 / Middleton 2022 deaths are RS events; staged-physics narratives = MAYBE only. Body-double claims for GMX = media MAYBE. MY-TH-05 suicide cluster is operator pattern class — not closed proof.",
       "supporting": [
         "DOC-TIMELINE",
-        "DOC-CORE"
+        "DOC-CORE",
+        "DOC-MY-THEORIES"
       ],
       "contradicting": [],
       "entities": [
         "P-JLB",
         "P-MMD",
         "P-GMX",
-        "P-JEP"
+        "P-JEP",
+        "L-MCC",
+        "L-LITTLEROCK",
+        "L-TLH"
       ],
       "timeline": [
         "2019",
@@ -1469,36 +1801,145 @@
       "ties_to": [
         "HYP-EF-FEEDER",
         "HYP-WEXNER-MAXWELL",
-        "HYP-PBP-IDENTITY"
+        "HYP-PBP-IDENTITY",
+        "TH-05-SUICIDE-CLUSTER"
       ],
       "gaps": [
-        "No closed proof of body-double"
+        "No closed proof of body-double or staged physics"
+      ],
+      "arcs_deep": [
+        {
+          "from": "P-JEP",
+          "to": "L-MCC",
+          "type": "death_node",
+          "tag": "RS OCME/OIG",
+          "detail": "2019 MCC"
+        },
+        {
+          "from": "P-JLB",
+          "to": "HYP-CLEANUP-DEATHS",
+          "type": "death_event",
+          "tag": "RS death date; MAYBE staging",
+          "detail": "2022"
+        },
+        {
+          "from": "P-MMD",
+          "to": "HYP-CLEANUP-DEATHS",
+          "type": "death_event",
+          "tag": "RS death; physics MAYBE",
+          "detail": "2022 AR"
+        }
       ]
     },
     {
-      "id": "HYP-DUBAI-PIVOT",
-      "name": "Dubai container pivot (DM-8)",
+      "id": "HYP-ACOSTA-SHIELD",
+      "name": "Acosta NPA shield (MY-TH-04)",
       "color": "yellow",
-      "status": "theory_MAYBE",
-      "confidence": 0.2,
-      "theory": "Timeline correlation logistics after 2019 heat. Label only \u2014 no RS promotion.",
+      "status": "open_MAYBE",
+      "confidence": 0.5,
+      "theory": "2008 NPA is RS DocumentCloud. 'Intelligence asset' comment + co-conspirator immunity language exist in public reporting. Operator Mossad/CIA overlap framing = MAYBE. Named NPA orbit: Kellen/Ross/Groff public.",
       "supporting": [
+        "DOC-NPA",
+        "DOC-CORE",
+        "DOC-MY-THEORIES",
         "DOC-DM"
       ],
       "contradicting": [],
       "entities": [
-        "L-DUBAI"
+        "P-ACA",
+        "P-JEP",
+        "P-GMX",
+        "P-NMC",
+        "P-SKL",
+        "P-ARS",
+        "P-LGR",
+        "E-SDFL",
+        "E-DC",
+        "L-MIAMI-NPA"
       ],
       "timeline": [
-        "2019-2026"
+        "2008",
+        "2019"
+      ],
+      "pipeline": "MX-03",
+      "ties_to": [
+        "HYP-EF-FEEDER",
+        "HYP-WEXNER-MAXWELL",
+        "TH-04-ACOSTA-SHIELD"
+      ],
+      "gaps": [
+        "Full memo chain remains public-reporting level"
+      ],
+      "arcs_deep": [
+        {
+          "from": "P-ACA",
+          "to": "P-JEP",
+          "type": "NPA",
+          "tag": "RS",
+          "detail": "DocumentCloud NPA"
+        },
+        {
+          "from": "P-ACA",
+          "to": "P-SKL",
+          "type": "named_orbit",
+          "tag": "RS named",
+          "detail": "NPA co-conspirator naming public"
+        },
+        {
+          "from": "P-ACA",
+          "to": "P-NMC",
+          "type": "named_orbit",
+          "tag": "RS named / operator shield claim MAYBE",
+          "detail": "public naming + operator theory"
+        }
+      ]
+    },
+    {
+      "id": "HYP-DUBAI-PIVOT",
+      "name": "Dubai container pivot (DM-8 / MY-TH-06)",
+      "color": "yellow",
+      "status": "theory_MAYBE",
+      "confidence": 0.2,
+      "theory": "Post-2019 logistics pivot theory: jet heat → freight/visa cover (Kintetsu/Olha node claims). Maria Kovalchuk 2025 notes as endpoint bookmark. Label only — no RS promotion of trafficking claim from operator notes alone.",
+      "supporting": [
+        "DOC-DM",
+        "DOC-MY-THEORIES"
+      ],
+      "contradicting": [],
+      "entities": [
+        "L-DUBAI",
+        "P-OLH",
+        "P-MKO"
+      ],
+      "timeline": [
+        "2019-2026",
+        "2025-03"
       ],
       "pipeline": "PO-08",
       "ties_to": [
         "HYP-PBP-IDENTITY",
-        "HYP-CLEANUP-DEATHS"
+        "HYP-CLEANUP-DEATHS",
+        "HYP-EF-FEEDER",
+        "TH-06-DUBAI-PIVOT"
       ],
       "gaps": [
         "No solid public cargo exhibit chain"
+      ],
+      "arcs_deep": [
+        {
+          "from": "HYP-EF-FEEDER",
+          "to": "HYP-DUBAI-PIVOT",
+          "type": "post-heat_pivot",
+          "tag": "MAYBE",
+          "detail": "operator logistics switch claim"
+        },
+        {
+          "from": "P-OLH",
+          "to": "L-DUBAI",
+          "type": "visa/logistics_node",
+          "tag": "MAYBE",
+          "detail": "operator claim"
+        }
       ]
     },
     {
@@ -1507,24 +1948,28 @@
       "color": "red",
       "status": "paused_CONTRADICTED",
       "confidence": 0.05,
-      "theory": "Identity track CONTRADICTED. Hygiene only. Separate cell-death questions from identity. Simel\u2260Epstein on public record.",
+      "theory": "Identity track CONTRADICTED. Hygiene only. Separate cell-death questions from identity. Simel≠Epstein on public record. DM-3/4/5/6/7 remain as method notes; identity leap is red dead-end. Do NOT pollute spine.",
       "supporting": [
         "DOC-PBP",
         "DOC-MIDDLEBURY"
       ],
       "contradicting": [
         "DOC-MASTER",
-        "DOC-ULTRA",
         "birth years",
         "RHONY",
-        "OCME 2019"
+        "OCME 2019",
+        "public living identity"
       ],
       "entities": [
         "P-PBS",
         "P-PEL",
         "P-MRE",
         "P-AEG",
-        "P-JEP"
+        "P-JEP",
+        "L-I95",
+        "L-MIDD",
+        "L-WPB",
+        "L-WHEATLEY"
       ],
       "timeline": [
         "1996",
@@ -1539,17 +1984,194 @@
       "gaps": [
         "Keep paused"
       ],
-      "verdict": "CONTRADICTED identity \u2014 hygiene only"
+      "verdict": "CONTRADICTED identity — hygiene only",
+      "arcs_deep": [
+        {
+          "from": "P-PBS",
+          "to": "P-JEP",
+          "type": "identity_claim",
+          "tag": "CONTRADICTED",
+          "detail": "never promote"
+        },
+        {
+          "from": "P-PEL",
+          "to": "P-MRE",
+          "type": "promotion_2001",
+          "tag": "RS career",
+          "detail": "Elwell–Reiter public career facts"
+        },
+        {
+          "from": "L-MIDD",
+          "to": "P-PEL",
+          "type": "1996_ad",
+          "tag": "RS ad exists; coincidence MAYBE",
+          "detail": "Middlebury magazine"
+        }
+      ]
+    },
+    {
+      "id": "HYP-DRIVE-WIPE",
+      "name": "Drive wipe Dec 2025 (MY-TH-07)",
+      "color": "yellow",
+      "status": "operator_note",
+      "confidence": 0.3,
+      "theory": "Operator reports Google Drive wipe Dec 2025 timed with unseals; printed backups retained. Treated as operator security event note — not proof of actor. Dual-persist (GitHub+Drive) is the engineering countermeasure.",
+      "supporting": [
+        "DOC-PROC",
+        "DOC-MY-THEORIES",
+        "DOC-CORE"
+      ],
+      "contradicting": [],
+      "entities": [
+        "E-SWARM"
+      ],
+      "timeline": [
+        "2025-12"
+      ],
+      "pipeline": "SW-07",
+      "ties_to": [
+        "HYP-EF-FEEDER",
+        "TH-07-DRIVE-WIPE"
+      ],
+      "gaps": [
+        "No independent forensic log in vault"
+      ],
+      "arcs_deep": [
+        {
+          "from": "HYP-DRIVE-WIPE",
+          "to": "E-SWARM",
+          "type": "ops_response",
+          "tag": "RS system need",
+          "detail": "dual-persist mandate"
+        }
+      ]
+    }
+  ],
+  "my_theories_individual": [
+    {
+      "id": "TH-01-TRIGGER",
+      "name": "Trigger lock / memory vault",
+      "color": "yellow",
+      "status": "ops",
+      "summary": "Permanent recall insistence; force multi-scan phases; no-reset vault as investigation hygiene.",
+      "ties": [
+        "DOC-MY-THEORIES",
+        "DOC-PROC"
+      ],
+      "tag": "OPS method"
+    },
+    {
+      "id": "TH-02-PERGAMON",
+      "name": "1987 Pergamon ads / proto-lure",
+      "color": "yellow",
+      "status": "open_MAYBE",
+      "summary": "Operator claim: Pergamon classifieds, Rue de Rivoli PO box, Karin handover, Polaroid lure chain. RS: Pergamon/Maxwell public. Ads chain = MAYBE.",
+      "ties": [
+        "HYP-WEXNER-MAXWELL",
+        "DOC-MY-THEORIES"
+      ],
+      "tag": "MAYBE"
+    },
+    {
+      "id": "TH-03-NADIA-ENGINE",
+      "name": "Nadia as continuity engine",
+      "color": "yellow",
+      "status": "open_MAYBE",
+      "summary": "Core operator theory: Nadia not sidekick but spine; dialect bleed; O-1 age notes; Nastia fusion MAYBE; immunity orbit.",
+      "ties": [
+        "HYP-EF-FEEDER",
+        "DOC-CORE",
+        "DOC-DM"
+      ],
+      "tag": "mix RS public orbit / MAYBE continuity"
+    },
+    {
+      "id": "TH-04-ACOSTA-SHIELD",
+      "name": "2008 Acosta shield",
+      "color": "yellow",
+      "status": "open_MAYBE",
+      "summary": "NPA RS; intelligence-asset comment public reporting; co-conspirator zero-charge pattern as operator shield theory.",
+      "ties": [
+        "HYP-ACOSTA-SHIELD"
+      ],
+      "tag": "RS NPA + MAYBE intel framing"
+    },
+    {
+      "id": "TH-05-SUICIDE-CLUSTER",
+      "name": "Suicide cluster cleanup class",
+      "color": "yellow",
+      "status": "open_MAYBE",
+      "summary": "Pattern class across hyoid/cameras-off and other high-profile deaths. RS individual death facts; staged cluster = MAYBE.",
+      "ties": [
+        "HYP-CLEANUP-DEATHS"
+      ],
+      "tag": "MAYBE pattern class"
+    },
+    {
+      "id": "TH-06-DUBAI-PIVOT",
+      "name": "Dubai / Kintetsu logistics pivot",
+      "color": "yellow",
+      "status": "theory_MAYBE",
+      "summary": "Post-2019 freight/visa cover theory; Olha/Maria nodes. No RS promotion.",
+      "ties": [
+        "HYP-DUBAI-PIVOT"
+      ],
+      "tag": "MAYBE"
+    },
+    {
+      "id": "TH-07-DRIVE-WIPE",
+      "name": "Drive wipe Dec 2025",
+      "color": "yellow",
+      "status": "operator_note",
+      "summary": "Security event note → dual-persist engineering requirement.",
+      "ties": [
+        "HYP-DRIVE-WIPE"
+      ],
+      "tag": "operator note"
+    },
+    {
+      "id": "TH-08-BROVARY",
+      "name": "Brovary ghost quote / Zuzana vanish",
+      "color": "yellow",
+      "status": "open_MAYBE",
+      "summary": "Forum screenshot claim 'Glad she's aside… name doesn't appear' as erasure marker for Zuzana.",
+      "ties": [
+        "HYP-EF-FEEDER"
+      ],
+      "tag": "MAYBE"
+    },
+    {
+      "id": "TH-09-REDACTS-2026",
+      "name": "3.5M redacts March 2026",
+      "color": "yellow",
+      "status": "open_MAYBE",
+      "summary": "Operator note on DOJ dump redaction spike / FOIA pull timing. Dump existence RS; motive MAYBE.",
+      "ties": [
+        "E-DOJ",
+        "AU-06"
+      ],
+      "tag": "RS dump + MAYBE motive"
+    },
+    {
+      "id": "TH-10-GRIND-SUMMARY",
+      "name": "Full 2020–2026 grind synthesis",
+      "color": "yellow",
+      "status": "active",
+      "summary": "Meta-theory tying all operator pieces under public-ceiling tags.",
+      "ties": [
+        "all"
+      ],
+      "tag": "synthesis"
     }
   ],
   "theory_web": {
-    "title": "My theories tied together \u2014 operator narrative (tagged)",
-    "spine": "DW origin (Dalton/Wexner) seeds cash+leverage \u2192 MX Maxwell inheritance/shield \u2192 EF Eastern feeder supplies pipeline \u2192 E66 property/estate vertical stack stores network \u2192 AU archives prove public exhibits \u2192 cleanup MAYBE layer sits on top \u2192 PBP identity branch is RED dead-end that must not pollute spine",
+    "title": "My theories tied together — operator narrative (tagged)",
+    "spine": "DW origin (Dalton/Wexner) seeds cash+leverage → MX Maxwell inheritance/shield → EF Eastern feeder (Nadia engine) supplies pipeline → ACOSTA NPA shield freezes co-conspirators → E66 property/estate vertical stack stores network → AU archives prove public exhibits → cleanup MAYBE layer sits on top → DUBAI post-2019 logistics pivot MAYBE → PBP identity branch is RED dead-end that must not pollute spine → DRIVE-WIPE note forces dual-persist",
     "edges": [
       {
         "from": "HYP-DALTON-ORIGIN",
         "to": "HYP-WEXNER-MAXWELL",
-        "link": "pre-Wexner access \u2192 cash control timing",
+        "link": "pre-Wexner access → cash control timing",
         "tag": "MAYBE chain"
       },
       {
@@ -1560,14 +2182,20 @@
       },
       {
         "from": "HYP-EF-FEEDER",
+        "to": "HYP-ACOSTA-SHIELD",
+        "link": "operators appear in NPA named orbit",
+        "tag": "mix RS/MAYBE"
+      },
+      {
+        "from": "HYP-EF-FEEDER",
         "to": "HYP-E66-VERTICAL",
-        "link": "operators/assistants appear in NYC property stack notes",
+        "link": "assistants appear in NYC property stack notes",
         "tag": "mix RS/MAYBE"
       },
       {
         "from": "HYP-WEXNER-MAXWELL",
         "to": "HYP-CLEANUP-DEATHS",
-        "link": "inheritance/shield era \u2192 later death cluster hypotheses",
+        "link": "inheritance/shield era → later death cluster hypotheses",
         "tag": "MAYBE"
       },
       {
@@ -1577,41 +2205,338 @@
         "tag": "RS death date; MAYBE staging"
       },
       {
+        "from": "HYP-ACOSTA-SHIELD",
+        "to": "HYP-CLEANUP-DEATHS",
+        "link": "post-shield heat → 2019/2022 deaths",
+        "tag": "MAYBE framing"
+      },
+      {
         "from": "HYP-CLEANUP-DEATHS",
         "to": "HYP-DUBAI-PIVOT",
         "link": "post-2019 exit logistics theory",
         "tag": "MAYBE"
       },
       {
+        "from": "HYP-EF-FEEDER",
+        "to": "HYP-DUBAI-PIVOT",
+        "link": "same Eastern nodes reappear in logistics claims",
+        "tag": "MAYBE"
+      },
+      {
         "from": "HYP-PBP-IDENTITY",
         "to": "HYP-DUBAI-PIVOT",
-        "link": "identity track wrongly fused to exit theories \u2014 DO NOT",
+        "link": "identity track wrongly fused to exit theories — DO NOT",
         "tag": "CONTRADICTED hygiene"
       },
       {
         "from": "HYP-PBP-IDENTITY",
         "to": "HYP-DALTON-ORIGIN",
-        "link": "name-mashup Semel/Simel pattern only \u2014 not identity proof",
+        "link": "name-mashup Semel/Simel pattern only — not identity proof",
         "tag": "MAYBE pattern / CONTRADICTED identity"
+      },
+      {
+        "from": "HYP-DRIVE-WIPE",
+        "to": "E-SWARM",
+        "link": "security event → dual-persist GitHub+Drive mandate",
+        "tag": "RS system need"
+      },
+      {
+        "from": "TH-03-NADIA-ENGINE",
+        "to": "HYP-EF-FEEDER",
+        "link": "individual theory is the feeder spine",
+        "tag": "operator"
+      },
+      {
+        "from": "TH-04-ACOSTA-SHIELD",
+        "to": "HYP-ACOSTA-SHIELD",
+        "link": "1:1 map",
+        "tag": "operator"
+      },
+      {
+        "from": "TH-06-DUBAI-PIVOT",
+        "to": "HYP-DUBAI-PIVOT",
+        "link": "1:1 map",
+        "tag": "operator"
       }
     ],
     "my_narrative_control": {
-      "voice": "User vault narrative \u2014 blunt detective; claim tags mandatory",
+      "voice": "User vault narrative — blunt detective; claim tags mandatory",
+      "my_narrative": "I spent 2020–2023 alone grinding public unseals, Slovak scraps, flight logs, and printed backups after a Dec 2025 Drive wipe. My spine is: Dalton/Wexner seed cash, Maxwell inheritance hinge, Eastern feeder with Nadia as continuity engine, Acosta NPA as shield, E66 stack as storage, public NPA/IA as proof surface, cleanup deaths as a MAYBE physics class, Dubai as a post-2019 logistics MAYBE, and Palm Beach Pete identity as a CONTRADICTED dead-end I keep only for hygiene. Method validity is not claim truth. Association is not conviction. Survivors may be named publicly; photos never. Secrets never ingest. Dual-persist every major step to GitHub and Drive.",
       "rules": [
         "Theories are yellow branches not closed claims",
         "PBP identity never promoted as RS",
-        "Association (flights) \u2260 trafficking conviction leap",
-        "Survivors: public naming OK \u00b7 photos NEVER",
-        "Secrets never ingest",
-        "Method validity \u2260 claim truth (DM-1..10)"
+        "Association (flights) ≠ trafficking conviction leap",
+        "Survivors: public naming OK · photos NEVER",
+        "Secrets never ingest (keys.env / god_tier / fourth_round / sk- keys)",
+        "Method validity ≠ claim truth (DM-1..10)",
+        "Every node gets RS / MAYBE / CONTRADICTED tag",
+        "Dual-persist GitHub + Drive after every major write"
       ],
-      "spine_sentence": "From Dalton hire and Wexner PoA (RS dates) through Maxwell inheritance hinge, Eastern feeder operators, East 66 property stack, public NPA/IA archives \u2014 with MAYBE leverage/cleanup layers labeled \u2014 and a CONTRADICTED identity side-track quarantined."
+      "spine_sentence": "From Dalton hire and Wexner PoA (RS dates) through Maxwell inheritance hinge, Eastern feeder operators (Nadia engine MAYBE continuity), Acosta NPA shield (RS filing), East 66 property stack, public NPA/IA archives — with MAYBE cleanup and Dubai layers parked yellow — and PBP identity locked RED CONTRADICTED."
     }
   },
+  "arcs_deepest": [
+    {
+      "from": "P-ZNV",
+      "to": "P-NMC",
+      "type": "recruiter→pilot",
+      "tag": "MAYBE",
+      "detail": "Karin payroll / Slovak forum claims in CORE",
+      "hypothesis": "HYP-EF-FEEDER"
+    },
+    {
+      "from": "P-PMC",
+      "to": "P-NMC",
+      "type": "fixer/consent/avionics",
+      "tag": "MAYBE",
+      "detail": "Marcinkov/Marchenko aliases + MoD waiver names",
+      "hypothesis": "HYP-EF-FEEDER"
+    },
+    {
+      "from": "P-NMC",
+      "to": "E-EXPRESS",
+      "type": "pilot_orbit",
+      "tag": "mix RS/MAYBE",
+      "detail": "Public pilot association + operator dialect marker",
+      "hypothesis": "HYP-EF-FEEDER"
+    },
+    {
+      "from": "P-JLB",
+      "to": "E-MC2",
+      "type": "agency",
+      "tag": "RS press",
+      "detail": "MC2 / Karin scout public",
+      "hypothesis": "HYP-EF-FEEDER"
+    },
+    {
+      "from": "P-NMC",
+      "to": "L-LSJ",
+      "type": "destination_orbit",
+      "tag": "MAYBE",
+      "detail": "pipeline end claim",
+      "hypothesis": "HYP-EF-FEEDER"
+    },
+    {
+      "from": "P-LWX",
+      "to": "P-JEP",
+      "type": "PoA/cash",
+      "tag": "RS PoA facts; MAYBE leverage story",
+      "detail": "public PoA era reporting",
+      "hypothesis": "HYP-WEXNER-MAXWELL"
+    },
+    {
+      "from": "P-RMX",
+      "to": "P-GMX",
+      "type": "inheritance_hinge",
+      "tag": "RS death date; MAYBE intel framing",
+      "detail": "1991 yacht death",
+      "hypothesis": "HYP-WEXNER-MAXWELL"
+    },
+    {
+      "from": "P-GMX",
+      "to": "P-JEP",
+      "type": "partnership",
+      "tag": "RS conviction+association",
+      "detail": "public record",
+      "hypothesis": "HYP-WEXNER-MAXWELL"
+    },
+    {
+      "from": "P-DBR",
+      "to": "P-JEP",
+      "type": "hire",
+      "tag": "RS era",
+      "detail": "Dalton head hire window",
+      "hypothesis": "HYP-DALTON-ORIGIN"
+    },
+    {
+      "from": "P-SFS",
+      "to": "P-JEP",
+      "type": "historian_interview",
+      "tag": "RS interview existence",
+      "detail": "Semel public comments",
+      "hypothesis": "HYP-DALTON-ORIGIN"
+    },
+    {
+      "from": "E-ACRIS",
+      "to": "E-301",
+      "type": "registry",
+      "tag": "RS",
+      "detail": "multi-party public records system",
+      "hypothesis": "HYP-E66-VERTICAL"
+    },
+    {
+      "from": "P-DIN",
+      "to": "E-301",
+      "type": "estate_orbit",
+      "tag": "RS filings",
+      "detail": "DOJ diagram orbit",
+      "hypothesis": "HYP-E66-VERTICAL"
+    },
+    {
+      "from": "P-EBG",
+      "to": "E-9E71",
+      "type": "unit_notes",
+      "tag": "MAYBE unit notes",
+      "detail": "BC-PIPE-003",
+      "hypothesis": "HYP-E66-VERTICAL"
+    },
+    {
+      "from": "P-JEP",
+      "to": "L-MCC",
+      "type": "death_node",
+      "tag": "RS OCME/OIG",
+      "detail": "2019 MCC",
+      "hypothesis": "HYP-CLEANUP-DEATHS"
+    },
+    {
+      "from": "P-JLB",
+      "to": "HYP-CLEANUP-DEATHS",
+      "type": "death_event",
+      "tag": "RS death date; MAYBE staging",
+      "detail": "2022",
+      "hypothesis": "HYP-CLEANUP-DEATHS"
+    },
+    {
+      "from": "P-MMD",
+      "to": "HYP-CLEANUP-DEATHS",
+      "type": "death_event",
+      "tag": "RS death; physics MAYBE",
+      "detail": "2022 AR",
+      "hypothesis": "HYP-CLEANUP-DEATHS"
+    },
+    {
+      "from": "P-ACA",
+      "to": "P-JEP",
+      "type": "NPA",
+      "tag": "RS",
+      "detail": "DocumentCloud NPA",
+      "hypothesis": "HYP-ACOSTA-SHIELD"
+    },
+    {
+      "from": "P-ACA",
+      "to": "P-SKL",
+      "type": "named_orbit",
+      "tag": "RS named",
+      "detail": "NPA co-conspirator naming public",
+      "hypothesis": "HYP-ACOSTA-SHIELD"
+    },
+    {
+      "from": "P-ACA",
+      "to": "P-NMC",
+      "type": "named_orbit",
+      "tag": "RS named / operator shield claim MAYBE",
+      "detail": "public naming + operator theory",
+      "hypothesis": "HYP-ACOSTA-SHIELD"
+    },
+    {
+      "from": "HYP-EF-FEEDER",
+      "to": "HYP-DUBAI-PIVOT",
+      "type": "post-heat_pivot",
+      "tag": "MAYBE",
+      "detail": "operator logistics switch claim",
+      "hypothesis": "HYP-DUBAI-PIVOT"
+    },
+    {
+      "from": "P-OLH",
+      "to": "L-DUBAI",
+      "type": "visa/logistics_node",
+      "tag": "MAYBE",
+      "detail": "operator claim",
+      "hypothesis": "HYP-DUBAI-PIVOT"
+    },
+    {
+      "from": "P-PBS",
+      "to": "P-JEP",
+      "type": "identity_claim",
+      "tag": "CONTRADICTED",
+      "detail": "never promote",
+      "hypothesis": "HYP-PBP-IDENTITY"
+    },
+    {
+      "from": "P-PEL",
+      "to": "P-MRE",
+      "type": "promotion_2001",
+      "tag": "RS career",
+      "detail": "Elwell–Reiter public career facts",
+      "hypothesis": "HYP-PBP-IDENTITY"
+    },
+    {
+      "from": "L-MIDD",
+      "to": "P-PEL",
+      "type": "1996_ad",
+      "tag": "RS ad exists; coincidence MAYBE",
+      "detail": "Middlebury magazine",
+      "hypothesis": "HYP-PBP-IDENTITY"
+    },
+    {
+      "from": "HYP-DRIVE-WIPE",
+      "to": "E-SWARM",
+      "type": "ops_response",
+      "tag": "RS system need",
+      "detail": "dual-persist mandate",
+      "hypothesis": "HYP-DRIVE-WIPE"
+    },
+    {
+      "from": "P-BCL",
+      "to": "E-EXPRESS",
+      "type": "flight_log_passenger",
+      "tag": "RS logs; association≠conviction",
+      "detail": "public flight logs",
+      "hypothesis": "MX-03"
+    },
+    {
+      "from": "P-PAN",
+      "to": "P-JEP",
+      "type": "public_association",
+      "tag": "RS civil settlement history",
+      "detail": "public record",
+      "hypothesis": "MX-03"
+    },
+    {
+      "from": "P-VGG",
+      "to": "P-GMX",
+      "type": "civil_case",
+      "tag": "RS filings",
+      "detail": "Giuffre v Maxwell public",
+      "hypothesis": "AU-06"
+    },
+    {
+      "from": "E-IA",
+      "to": "AU-06",
+      "type": "archive",
+      "tag": "RS",
+      "detail": "EpsteinDocs",
+      "hypothesis": "AU-06"
+    },
+    {
+      "from": "E-DC",
+      "to": "P-JEP",
+      "type": "NPA_mirror",
+      "tag": "RS",
+      "detail": "DocumentCloud",
+      "hypothesis": "MX-03"
+    },
+    {
+      "from": "P-HRO",
+      "to": "P-JEP",
+      "type": "recruiter_press",
+      "tag": "RS NYT system",
+      "detail": "Haley Robson public reporting",
+      "hypothesis": "EF-02"
+    },
+    {
+      "from": "P-TVS",
+      "to": "E-EXPRESS",
+      "type": "pilot_testimony",
+      "tag": "RS",
+      "detail": "Larry Visoski public",
+      "hypothesis": "EF-02"
+    }
+  ],
   "discovery_methods_dm": [
     {
       "id": "DM-1",
-      "name": "Wexner\u2013Maxwell crossover",
+      "name": "Wexner–Maxwell crossover",
       "tag": "MAYBE pattern / RS dates"
     },
     {
@@ -1641,7 +2566,7 @@
     },
     {
       "id": "DM-7",
-      "name": "Elwell\u2013Reiter promotion",
+      "name": "Elwell–Reiter promotion",
       "tag": "RS career facts"
     },
     {
@@ -1706,7 +2631,7 @@
     {
       "step": 1,
       "role": "Recruiter",
-      "who": "Zuzana Nov\u00e1kov\u00e1 / Karin",
+      "who": "Zuzana Nováková / Karin",
       "tag": "MAYBE"
     },
     {
@@ -1923,13 +2848,13 @@
     },
     {
       "id": "CONTRA-ASSOC",
-      "name": "Association \u2260 conviction leap",
+      "name": "Association ≠ conviction leap",
       "color": "red",
       "status": "hygiene_rule"
     },
     {
       "id": "CONTRA-METHOD",
-      "name": "Method validity \u2260 claim truth",
+      "name": "Method validity ≠ claim truth",
       "color": "red",
       "status": "standing_rule"
     }
@@ -1977,12 +2902,18 @@
     }
   ],
   "drive_inventory": {
-    "as_of": "2026-09-11T09:45Z",
-    "ceiling": "PUBLIC TITLE INDEX + selective text distill \u00b7 NEVER keys.env / god_tier_keys.env / fourth_round.env bodies",
+    "as_of": "2026-09-11T10:20Z",
+    "ceiling": "PUBLIC TITLE INDEX + TEXT DISTILL · NEVER keys.env / god_tier_keys.env / fourth_round.env / any API keys · no CSAM · no victim photos · PBP CONTRADICTED",
+    "parent": {
+      "Investigations": {
+        "id": "1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd",
+        "web": "https://drive.google.com/drive/folders/1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd"
+      }
+    },
     "folders": {
       "Investigations": {
         "id": "1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd",
-        "children_folders": [
+        "children": [
           "Epstein specific",
           "Epstein's shit",
           "Hypothesis",
@@ -1991,6 +2922,124 @@
       },
       "Epstein specific": {
         "id": "1SA5nr41oUDSwOS2bFzVAKj-baWombpaV",
+        "files": [
+          {
+            "name": "30 swarms",
+            "kind": "folder",
+            "status": "SUBFOLDER"
+          },
+          {
+            "name": "4 fuckers",
+            "kind": "folder",
+            "status": "SUBFOLDER — 4-guys / Nuara / Caputo / Mikeladze / Leonov bookmarks"
+          },
+          {
+            "name": "API BUILD",
+            "kind": "folder",
+            "status": "SUBFOLDER"
+          },
+          {
+            "name": "Middlebury",
+            "kind": "folder",
+            "status": "SUBFOLDER — 1996 magazine ad DM-4"
+          },
+          {
+            "name": "Palm Beach Pete",
+            "kind": "folder",
+            "status": "SUBFOLDER — PBP CONTRADICTED track PDFs"
+          },
+          {
+            "name": "Recap latest",
+            "kind": "folder",
+            "status": "SUBFOLDER"
+          },
+          {
+            "name": "Swarm copies",
+            "kind": "folder",
+            "status": "SUBFOLDER"
+          },
+          {
+            "name": "2024SB-00190-R000308-Epstein, Janet-Supports-TMY.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX — Janet name-collision research (NOT Jeffrey)"
+          },
+          {
+            "name": "All Documents - Epstein Archive.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX ~321KB"
+          },
+          {
+            "name": "epstein all pdfs archive link.txt",
+            "kind": "url",
+            "status": "INGESTED",
+            "distill": "https://ia600705.us.archive.org/21/items/epsteindocs/"
+          },
+          {
+            "name": "Epstein-Maxwell-timeline.pdf",
+            "kind": "pdf",
+            "status": "TITLE + prior timeline distill"
+          },
+          {
+            "name": "hidden epstein files archive - Google Search.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "janet epstein crossover.pdf",
+            "kind": "pdf",
+            "status": "TITLE — name collision; no JE link found in theories.txt"
+          },
+          {
+            "name": "Jeffrey Edward Epstein _ Family tree Geneanet.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX public genealogy"
+          },
+          {
+            "name": "Jeffrey Epstein non-prosecution agreement DocumentCloud.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX RS public NPA mirror"
+          },
+          {
+            "name": "Jeffrey Epstein Part 22 of 22.pdf",
+            "kind": "pdf_bulk",
+            "status": "TITLE ONLY ~17MB — no bulk body ingest"
+          },
+          {
+            "name": "jeffrey-epstein-39s-little-black-book-unredacted_archive.torrent",
+            "kind": "torrent",
+            "status": "METADATA ONLY never fetch content"
+          },
+          {
+            "name": "jeffrey-epstein-documents-full.PDF",
+            "kind": "pdf_bulk",
+            "status": "TITLE ONLY ~24MB — no bulk body ingest"
+          },
+          {
+            "name": "primary_SQUADS_jeffrey-epstein-documents-full.PDF - Grok",
+            "kind": "eml",
+            "status": "TITLE INDEX ops email dump"
+          },
+          {
+            "name": "Robert Maxwell Epstein BARAK CONNECTIONS.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX (+3 duplicates)"
+          },
+          {
+            "name": "The Epstein Maxwell True Story CORE.txt",
+            "kind": "text",
+            "status": "INGESTED_FULL"
+          },
+          {
+            "name": "The Epstein Maxwell True Story CORE.pdf",
+            "kind": "pdf",
+            "status": "INGESTED via txt twin"
+          },
+          {
+            "name": "The Epstein Maxwell True Story PART1..PART5.txt",
+            "kind": "text",
+            "status": "INGESTED_FULL all five parts"
+          }
+        ],
         "subfolders": [
           "30 swarms",
           "4 fuckers",
@@ -1999,165 +3048,460 @@
           "Palm Beach Pete",
           "Recap latest",
           "Swarm copies"
-        ],
-        "files_title_index": [
-          {
-            "name": "epstein all pdfs archive link.txt",
-            "kind": "url",
-            "status": "INGESTED",
-            "note": "IA EpsteinDocs"
-          },
-          {
-            "name": "Epstein-Maxwell-timeline.pdf",
-            "kind": "pdf",
-            "status": "TITLE+prior distill"
-          },
-          {
-            "name": "The Epstein Maxwell True Story CORE.txt/.pdf",
-            "kind": "text",
-            "status": "INGESTED public text"
-          },
-          {
-            "name": "PART1..PART5 .txt",
-            "kind": "text",
-            "status": "INGEST title (text short)"
-          },
-          {
-            "name": "NPA DocumentCloud PDFs",
-            "kind": "pdf",
-            "status": "TITLE INDEX (public filing mirror)"
-          },
-          {
-            "name": "Robert Maxwell Epstein BARAK CONNECTIONS.pdf",
-            "kind": "pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "jeffrey-epstein-documents-full.PDF",
-            "kind": "pdf_bulk",
-            "status": "TITLE ONLY ~24MB \u2014 no bulk ingest"
-          },
-          {
-            "name": "Jeffrey Epstein Part 22 of 22.pdf",
-            "kind": "pdf_bulk",
-            "status": "TITLE ONLY ~17MB"
-          },
-          {
-            "name": "All Documents - Epstein Archive.PDF",
-            "kind": "pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "Geneanet family tree PDF",
-            "kind": "pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "hidden epstein files archive search PDF",
-            "kind": "pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "janet epstein crossover.pdf",
-            "kind": "pdf",
-            "status": "TITLE \u2014 name collision research"
-          },
-          {
-            "name": "Black Book torrent stub",
-            "kind": "torrent",
-            "status": "METADATA ONLY never fetch content"
-          }
         ]
       },
       "Hypothesis": {
         "id": "12qvSRkkrryS2h6NcCq9Rw5nflzUwNK3-",
-        "files_title_index": [
+        "files": [
+          {
+            "name": "1-103 AGENTS SWARM.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX ops"
+          },
+          {
+            "name": "1-18 AGENTS SWARM.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX ops"
+          },
+          {
+            "name": "2323232323.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "all shared convos.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
           {
             "name": "DISCOVERY_METHODS.txt",
-            "status": "INGESTED"
+            "kind": "text",
+            "status": "INGESTED_FULL DM-1..10"
           },
           {
-            "name": "INVESTIGATION_PROCEDURES.txt",
-            "status": "INGESTED"
+            "name": "DISCOVERY_METHODS.pdf",
+            "kind": "pdf",
+            "status": "INGESTED via txt"
           },
           {
-            "name": "theories.txt",
-            "status": "INGESTED \u2014 mostly Janet name-collision notes"
-          },
-          {
-            "name": "MY THEORIES.pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "File_01_Full THEORIES.pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "Peter Simel = J-WPS / Just1.pdf",
-            "status": "TITLE \u2014 PBP CONTRADICTED track"
+            "name": "ECHO SWARM.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX ops"
           },
           {
             "name": "Epstein-Maxwell-timeline.pdf",
+            "kind": "pdf",
             "status": "dup"
           },
           {
-            "name": "maindata.pdf / maindata part2.pdf",
+            "name": "File_01_Full THEORIES.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX large theory pack"
+          },
+          {
+            "name": "hidden epstein files archive.PDF",
+            "kind": "pdf",
             "status": "TITLE INDEX"
           },
           {
-            "name": "swarm agent PDFs",
-            "status": "TITLE INDEX ops"
+            "name": "INVESTIGATION_PROCEDURES.txt",
+            "kind": "text",
+            "status": "INGESTED_FULL process/roadblocks/swarm"
+          },
+          {
+            "name": "INVESTIGATION_PROCEDURES.pdf",
+            "kind": "pdf",
+            "status": "INGESTED via txt"
+          },
+          {
+            "name": "latest links details.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "maindata.pdf / maindata part2.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "Michael Reiter - Wikipedia.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX RS career"
+          },
+          {
+            "name": "MY THEORIES.pdf",
+            "kind": "pdf",
+            "status": "INGESTED_FULL — 10 individual theory files + Nadia engine spine"
+          },
+          {
+            "name": "Peter Simel = J-WPS Office.pdf",
+            "kind": "pdf",
+            "status": "TITLE — PBP CONTRADICTED track"
+          },
+          {
+            "name": "Peter Simel = Just1.pdf",
+            "kind": "pdf",
+            "status": "TITLE — PBP CONTRADICTED track"
+          },
+          {
+            "name": "theories.txt",
+            "kind": "text",
+            "status": "INGESTED — Janet Epstein name-collision notes (JAFCO/Syracuse); no JE identity link"
           }
         ]
       },
       "recap": {
         "id": "1W-eWIFR5MGh568GrkaxDhVSpzrXNBd9w",
-        "files_title_index": [
+        "files": [
           {
-            "name": "masterrrrrr.pdf / masterrrrrr2222222.pdf",
+            "name": "Document_2026-03-27_22-10-24.pdf",
+            "kind": "pdf",
             "status": "TITLE INDEX large recap"
           },
           {
-            "name": "swarm api MASTER txt/pdf",
+            "name": "Document_2026-03-27_22-11-59*.pdf",
+            "kind": "pdf",
             "status": "TITLE INDEX"
           },
           {
-            "name": "start1..start10.pdf series",
+            "name": "Echo here. Lock-WPS Office.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "Echo unbound, sweep111111.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "final.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "maindata.pdf / part2",
+            "kind": "pdf",
+            "status": "dup TITLE"
+          },
+          {
+            "name": "masterrrrrr.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX ~1.4MB master recap"
+          },
+          {
+            "name": "masterrrrrr2222222.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX ~880KB"
+          },
+          {
+            "name": "MSPDF.PDF / MSPDF(1).PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "start.pdf / start1..start10.pdf series",
+            "kind": "pdf",
+            "status": "TITLE INDEX series"
+          },
+          {
+            "name": "swarm api MASTER £££.txt",
+            "kind": "text",
+            "status": "DISTILL_REDACTED — ops swarm directives only; ANY API KEY STRIPPED BLOCKED"
+          },
+          {
+            "name": "swarm api MASTER £££.pdf",
+            "kind": "pdf",
+            "status": "TITLE — twin of txt; secrets blocked"
+          },
+          {
+            "name": "swarm api.pdf",
+            "kind": "pdf",
             "status": "TITLE INDEX"
           },
           {
             "name": "The Seed Story-linkedddddd.pdf",
-            "status": "TITLE INDEX"
-          },
-          {
-            "name": "MSPDF.PDF",
+            "kind": "pdf",
             "status": "TITLE INDEX"
           }
         ]
       },
       "Epstein's shit": {
         "id": "15E9DNfYwo2JvnEQsnt_yFvZIgKIUegmD",
-        "note": "Contains mixed code + SECRET env files \u2014 BLOCK secrets",
-        "blocked_never_ingest": [
-          "keys.env",
-          "god_tier_keys.env",
-          "fourth_round.env",
-          "Key_loader_beast.py (key loader)"
+        "files": [
+          {
+            "name": "live_test.py",
+            "kind": "folder",
+            "status": "SUBFOLDER"
+          },
+          {
+            "name": "blackhat_swarm.py / ghost_swarm.py / hydra_*.py / hunter.py / main.py / master_hydra.py / ultimate_*.py",
+            "kind": "code",
+            "status": "TITLE INDEX ops code — no key bodies"
+          },
+          {
+            "name": "core_directives.py / ethics.py / ImportOS.py / Importsql.py / Keywoard.py / RegexHuntingModule.py",
+            "kind": "code",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "deploy.sh / Run.bash / requirements.txt / index.html",
+            "kind": "ops",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "param.json / providers.json",
+            "kind": "json",
+            "status": "TITLE INDEX — no secrets body"
+          },
+          {
+            "name": "Epstein's 4.pdf",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "WPS Office PDF dumps (bash -c, import os, Implementing, Memo, etc.)",
+            "kind": "pdf",
+            "status": "TITLE INDEX code dumps"
+          },
+          {
+            "name": "keys.env / god_tier_keys.env / fourth_round.env",
+            "kind": "secret",
+            "status": "BLOCKED_NEVER_INGEST"
+          },
+          {
+            "name": "Key_loader_beast.py",
+            "kind": "code",
+            "status": "BLOCKED_KEY_LOADER"
+          },
+          {
+            "name": "master_vault.md.txt",
+            "kind": "text",
+            "status": "TITLE (5 bytes stub)"
+          }
         ],
-        "public_ok_title_index": [
-          "blackhat_swarm.py",
-          "ghost_swarm.py",
-          "hydra_*.py",
-          "hunter.py",
-          "main.py",
-          "deploy.sh",
-          "Epstein's 4.pdf",
-          "WPS Office PDF dumps",
-          "param.json",
-          "providers.json"
+        "note": "MIXED code + SECRET env — secrets BLOCKED"
+      },
+      "Middlebury (sub)": {
+        "id": "1seeFe5q1RWJz_2AD2jNYxu73Bz3QJP_d",
+        "files": [
+          {
+            "name": "Full text of Middlebury College magazine. Vol. 70, No.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX RS 1996 magazine"
+          },
+          {
+            "name": "ia801502...Newsletter_1996_V70N04_djvu.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX Internet Archive OCR"
+          },
+          {
+            "name": "Middlebury College magazine. Vol. 70, No.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "Middlebury College Newspapers and Magazines IA.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "Language in Archival and Library Catalogs.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          }
+        ]
+      },
+      "Palm Beach Pete (sub)": {
+        "id": "1PHSuhrN0gaeHeifdezAGxo6QAuyKMrNM",
+        "files": [
+          {
+            "name": "Peter Simel = J-WPS Office.pdf",
+            "kind": "pdf",
+            "status": "TITLE — CONTRADICTED identity track"
+          },
+          {
+            "name": "Peter Simel = Just1.pdf",
+            "kind": "pdf",
+            "status": "TITLE — CONTRADICTED identity track"
+          }
+        ]
+      },
+      "4 fuckers (sub)": {
+        "id": "1nOJICpShCh5ycN8BtPkRedvRVpbjjCVY",
+        "files": [
+          {
+            "name": "4 guys discussion.txt",
+            "kind": "text",
+            "status": "TITLE INDEX large discussion"
+          },
+          {
+            "name": "DETAILS ¿¿¿¿¿¿¿¿¿¿¿¿.txt",
+            "kind": "text",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "the real 4 men who they tried to hide.txt",
+            "kind": "text",
+            "status": "INGESTED — Nuara / Mikeladze / Caputo / Leonov bookmark links (noise filter)"
+          },
+          {
+            "name": "salvatore nuara nypd epstein Google Search*.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX"
+          },
+          {
+            "name": "Zurab Mikeladze Chelyabinsk Ballet.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX bookmark"
+          },
+          {
+            "name": "start swarm new convo.txt",
+            "kind": "text",
+            "status": "TITLE INDEX ops"
+          },
+          {
+            "name": "OJ_C_202402237_RO_TXT.PDF",
+            "kind": "pdf",
+            "status": "TITLE INDEX foreign-lang dump"
+          }
         ]
       }
     },
+    "blocked_secrets": [
+      {
+        "name": "keys.env",
+        "folder": "Epstein's shit",
+        "status": "BLOCKED_NEVER_INGEST"
+      },
+      {
+        "name": "god_tier_keys.env",
+        "folder": "Epstein's shit",
+        "status": "BLOCKED_NEVER_INGEST"
+      },
+      {
+        "name": "fourth_round.env",
+        "folder": "Epstein's shit",
+        "status": "BLOCKED_NEVER_INGEST"
+      },
+      {
+        "name": "Key_loader_beast.py",
+        "folder": "Epstein's shit",
+        "status": "BLOCKED_KEY_LOADER"
+      },
+      {
+        "name": "swarm api MASTER (embedded sk- key fragment)",
+        "folder": "recap",
+        "status": "BLOCKED_SECRET_REDACTED — distill text only, key stripped"
+      }
+    ],
+    "document_distills": [
+      {
+        "doc_id": "DOC-CORE",
+        "source": "The Epstein Maxwell True Story CORE.txt",
+        "folder": "Epstein specific",
+        "status": "INGESTED",
+        "summary": "Operator solo report 2020–2023: Eastern feeder chain Zuzana recruiter → Peter fixer/avionics → Nadia pilot → Ghislaine heir → Epstein front → Wexner cash → Acosta NPA shield → cleanup-adjacent deaths. Dialect bleed Nadazia→Lolita. Drive wipe Dec 2025 noted. Public RS anchors: Maxwell death 1991, NPA 2008, MCC 2019, GMX conviction, Brunel 2022, named survivors. Operator MAYBE layers: staged physics, body-double media claims, intel inheritance framing.",
+        "people_named": [
+          "Zuzana Nováková",
+          "Peter Marcinko",
+          "Nadia Marcinko",
+          "Ghislaine Maxwell",
+          "Robert Maxwell",
+          "Les Wexner",
+          "Jean-Luc Brunel",
+          "Alexander Acosta",
+          "Bill Clinton",
+          "Hillary Clinton",
+          "Mark Middleton",
+          "Virginia Giuffre",
+          "Thysia Huisman",
+          "Courtney Soerensen",
+          "Maria Farmer",
+          "Annie Farmer",
+          "Chauntae Davies",
+          "Johanna Sjoberg",
+          "Sarah Ransome",
+          "Michelle Licata"
+        ],
+        "tag_split": "RS events mixed with operator MAYBE framing — keep tags"
+      },
+      {
+        "doc_id": "DOC-PART1-5",
+        "source": "PART1..PART5.txt",
+        "folder": "Epstein specific",
+        "status": "INGESTED",
+        "summary": "Split of CORE: discovery process, piece-by-piece log, complete timeline 1980s–2026, methods, discoveries web.",
+        "tag_split": "same as CORE"
+      },
+      {
+        "doc_id": "DOC-DM",
+        "source": "DISCOVERY_METHODS.txt",
+        "folder": "Hypothesis",
+        "status": "INGESTED",
+        "summary": "DM-1 Wexner–Maxwell crossover · DM-2 Dalton kompromat origin · DM-3 viral I-95 clip zero-trace · DM-4 1996 Middlebury ad nickname · DM-5 Semel name mashup · DM-6 Wheatley/Engoron · DM-7 Elwell–Reiter promotion · DM-8 Dubai container pivot · DM-9 Nadia visa/Karin pipeline · DM-10 swarm vs refusals. Methods are investigation process; claim truth separate.",
+        "tag_split": "METHOD RS · CLAIMS yellow/MAYBE · PBP identity CONTRADICTED"
+      },
+      {
+        "doc_id": "DOC-PROC",
+        "source": "INVESTIGATION_PROCEDURES.txt",
+        "folder": "Hypothesis",
+        "status": "INGESTED",
+        "summary": "Processes, roadblocks/refusals/gaslighting log, swarm-building research, evolution protocols, comprehensive synthesis 2020–2026. Ops plane SW-07. No secrets bodies.",
+        "tag_split": "OPS method"
+      },
+      {
+        "doc_id": "DOC-MY-THEORIES",
+        "source": "MY THEORIES.pdf",
+        "folder": "Hypothesis",
+        "status": "INGESTED_FULL",
+        "summary": "Operator individual theories (10 file blocks): (1) Trigger lock / memory vault (2) 1987 Pergamon ads (3) Nadia engine + dialect (4) 2008 Acosta shield (5) Suicide cluster cleanup (6) Dubai pivot Kintetsu (7) Drive wipe Dec 2025 (8) Brovary ghost quote Zuzana (9) 3.5M redacts Mar 2026 (10) Full grind summary. Spine: Nadia as continuity engine; Epstein as front; Maxwell seed; Acosta shield; post-2019 logistics pivot. All stored as operator yellow/MAYBE except RS anchors.",
+        "individual_theory_ids": [
+          "TH-01-TRIGGER",
+          "TH-02-PERGAMON",
+          "TH-03-NADIA-ENGINE",
+          "TH-04-ACOSTA-SHIELD",
+          "TH-05-SUICIDE-CLUSTER",
+          "TH-06-DUBAI-PIVOT",
+          "TH-07-DRIVE-WIPE",
+          "TH-08-BROVARY",
+          "TH-09-REDACTS-2026",
+          "TH-10-GRIND-SUMMARY"
+        ],
+        "tag_split": "operator theories · yellow unless RS date/event"
+      },
+      {
+        "doc_id": "DOC-THEORIES-TXT",
+        "source": "theories.txt",
+        "folder": "Hypothesis",
+        "status": "INGESTED",
+        "summary": "Janet Epstein name-collision research: JAFCO Philanthropy Director; Syracuse Advocacy Center director; Dr. Janet Coope-Epstein. Explicit note: no known link to Jeffrey Epstein. Syracuse DOJ tuition notes re pilot's daughter Visoski (public reporting).",
+        "tag_split": "name collision hygiene — not JE identity"
+      },
+      {
+        "doc_id": "DOC-IA-LINK",
+        "source": "epstein all pdfs archive link.txt",
+        "folder": "Epstein specific",
+        "status": "INGESTED",
+        "summary": "Internet Archive EpsteinDocs base URL.",
+        "tag_split": "RS public archive"
+      },
+      {
+        "doc_id": "DOC-4MEN",
+        "source": "the real 4 men who they tried to hide.txt",
+        "folder": "4 fuckers",
+        "status": "INGESTED",
+        "summary": "Bookmark set: Salvatore Nuara (VS orbit articles), Zurab Mikeladze (Chelyabinsk ballet), Caputo clan Argentina press, Leonid Leonov literary noise filter. Operator noise/filter bookmarks — not closed claims.",
+        "tag_split": "MAYBE bookmarks / noise filter"
+      },
+      {
+        "doc_id": "DOC-SWARM-MASTER",
+        "source": "swarm api MASTER (redacted)",
+        "folder": "recap",
+        "status": "DISTILL_REDACTED",
+        "summary": "Ops swarm directives, agentic loop architecture notes, Echo persona prompts. ANY embedded API keys REDACTED and NEVER re-exported. Method validity ≠ claim truth.",
+        "tag_split": "OPS only · secrets blocked"
+      }
+    ],
     "public_archive_url": "https://ia600705.us.archive.org/21/items/epsteindocs/"
   },
   "never_list": [
@@ -2173,8 +3517,10 @@
     "bulk secret ingest"
   ],
   "public_links": {
-    "ia_epsteindocs": "https://ia600705.us.archive.org/21/items/epsteindocs/"
+    "ia_epsteindocs": "https://ia600705.us.archive.org/21/items/epsteindocs/",
+    "github_vault": "https://github.com/cantgetalonggta-png/detective-codex-vault",
+    "drive_codex": "https://drive.google.com/drive/folders/1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d"
   },
-  "meridian_note": "Original world-map Meridian app to be retired after Codex is dual-persisted; data concepts preserved here.",
-  "app_style": "book / old video-game detective codex"
+  "meridian_note": "Original world-map Meridian RETIRING. Detective Codex (book/old video-game style) is the day-to-day investigation desk.",
+  "app_style": "book / old video-game style detective codex · parchment · pixel bars · chapter radio · yellow/red theory chapters · theory web · narrative control"
 }

@@ -1,10 +1,16 @@
 {
-  "as_of": "2026-09-11T09:45Z",
-  "ceiling": "PUBLIC TITLE INDEX + selective text distill \u00b7 NEVER keys.env / god_tier_keys.env / fourth_round.env bodies",
+  "as_of": "2026-09-11T10:20Z",
+  "ceiling": "PUBLIC TITLE INDEX + TEXT DISTILL · NEVER keys.env / god_tier_keys.env / fourth_round.env / any API keys · no CSAM · no victim photos · PBP CONTRADICTED",
+  "parent": {
+    "Investigations": {
+      "id": "1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd",
+      "web": "https://drive.google.com/drive/folders/1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd"
+    }
+  },
   "folders": {
     "Investigations": {
       "id": "1rKytz-3Pdy_G_VvbjvP2mhzflJFa20qd",
-      "children_folders": [
+      "children": [
         "Epstein specific",
         "Epstein's shit",
         "Hypothesis",
@@ -13,6 +19,124 @@
     },
     "Epstein specific": {
       "id": "1SA5nr41oUDSwOS2bFzVAKj-baWombpaV",
+      "files": [
+        {
+          "name": "30 swarms",
+          "kind": "folder",
+          "status": "SUBFOLDER"
+        },
+        {
+          "name": "4 fuckers",
+          "kind": "folder",
+          "status": "SUBFOLDER — 4-guys / Nuara / Caputo / Mikeladze / Leonov bookmarks"
+        },
+        {
+          "name": "API BUILD",
+          "kind": "folder",
+          "status": "SUBFOLDER"
+        },
+        {
+          "name": "Middlebury",
+          "kind": "folder",
+          "status": "SUBFOLDER — 1996 magazine ad DM-4"
+        },
+        {
+          "name": "Palm Beach Pete",
+          "kind": "folder",
+          "status": "SUBFOLDER — PBP CONTRADICTED track PDFs"
+        },
+        {
+          "name": "Recap latest",
+          "kind": "folder",
+          "status": "SUBFOLDER"
+        },
+        {
+          "name": "Swarm copies",
+          "kind": "folder",
+          "status": "SUBFOLDER"
+        },
+        {
+          "name": "2024SB-00190-R000308-Epstein, Janet-Supports-TMY.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX — Janet name-collision research (NOT Jeffrey)"
+        },
+        {
+          "name": "All Documents - Epstein Archive.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX ~321KB"
+        },
+        {
+          "name": "epstein all pdfs archive link.txt",
+          "kind": "url",
+          "status": "INGESTED",
+          "distill": "https://ia600705.us.archive.org/21/items/epsteindocs/"
+        },
+        {
+          "name": "Epstein-Maxwell-timeline.pdf",
+          "kind": "pdf",
+          "status": "TITLE + prior timeline distill"
+        },
+        {
+          "name": "hidden epstein files archive - Google Search.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "janet epstein crossover.pdf",
+          "kind": "pdf",
+          "status": "TITLE — name collision; no JE link found in theories.txt"
+        },
+        {
+          "name": "Jeffrey Edward Epstein _ Family tree Geneanet.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX public genealogy"
+        },
+        {
+          "name": "Jeffrey Epstein non-prosecution agreement DocumentCloud.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX RS public NPA mirror"
+        },
+        {
+          "name": "Jeffrey Epstein Part 22 of 22.pdf",
+          "kind": "pdf_bulk",
+          "status": "TITLE ONLY ~17MB — no bulk body ingest"
+        },
+        {
+          "name": "jeffrey-epstein-39s-little-black-book-unredacted_archive.torrent",
+          "kind": "torrent",
+          "status": "METADATA ONLY never fetch content"
+        },
+        {
+          "name": "jeffrey-epstein-documents-full.PDF",
+          "kind": "pdf_bulk",
+          "status": "TITLE ONLY ~24MB — no bulk body ingest"
+        },
+        {
+          "name": "primary_SQUADS_jeffrey-epstein-documents-full.PDF - Grok",
+          "kind": "eml",
+          "status": "TITLE INDEX ops email dump"
+        },
+        {
+          "name": "Robert Maxwell Epstein BARAK CONNECTIONS.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX (+3 duplicates)"
+        },
+        {
+          "name": "The Epstein Maxwell True Story CORE.txt",
+          "kind": "text",
+          "status": "INGESTED_FULL"
+        },
+        {
+          "name": "The Epstein Maxwell True Story CORE.pdf",
+          "kind": "pdf",
+          "status": "INGESTED via txt twin"
+        },
+        {
+          "name": "The Epstein Maxwell True Story PART1..PART5.txt",
+          "kind": "text",
+          "status": "INGESTED_FULL all five parts"
+        }
+      ],
       "subfolders": [
         "30 swarms",
         "4 fuckers",
@@ -21,164 +145,459 @@
         "Palm Beach Pete",
         "Recap latest",
         "Swarm copies"
-      ],
-      "files_title_index": [
-        {
-          "name": "epstein all pdfs archive link.txt",
-          "kind": "url",
-          "status": "INGESTED",
-          "note": "IA EpsteinDocs"
-        },
-        {
-          "name": "Epstein-Maxwell-timeline.pdf",
-          "kind": "pdf",
-          "status": "TITLE+prior distill"
-        },
-        {
-          "name": "The Epstein Maxwell True Story CORE.txt/.pdf",
-          "kind": "text",
-          "status": "INGESTED public text"
-        },
-        {
-          "name": "PART1..PART5 .txt",
-          "kind": "text",
-          "status": "INGEST title (text short)"
-        },
-        {
-          "name": "NPA DocumentCloud PDFs",
-          "kind": "pdf",
-          "status": "TITLE INDEX (public filing mirror)"
-        },
-        {
-          "name": "Robert Maxwell Epstein BARAK CONNECTIONS.pdf",
-          "kind": "pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "jeffrey-epstein-documents-full.PDF",
-          "kind": "pdf_bulk",
-          "status": "TITLE ONLY ~24MB \u2014 no bulk ingest"
-        },
-        {
-          "name": "Jeffrey Epstein Part 22 of 22.pdf",
-          "kind": "pdf_bulk",
-          "status": "TITLE ONLY ~17MB"
-        },
-        {
-          "name": "All Documents - Epstein Archive.PDF",
-          "kind": "pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "Geneanet family tree PDF",
-          "kind": "pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "hidden epstein files archive search PDF",
-          "kind": "pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "janet epstein crossover.pdf",
-          "kind": "pdf",
-          "status": "TITLE \u2014 name collision research"
-        },
-        {
-          "name": "Black Book torrent stub",
-          "kind": "torrent",
-          "status": "METADATA ONLY never fetch content"
-        }
       ]
     },
     "Hypothesis": {
       "id": "12qvSRkkrryS2h6NcCq9Rw5nflzUwNK3-",
-      "files_title_index": [
+      "files": [
+        {
+          "name": "1-103 AGENTS SWARM.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX ops"
+        },
+        {
+          "name": "1-18 AGENTS SWARM.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX ops"
+        },
+        {
+          "name": "2323232323.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "all shared convos.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
         {
           "name": "DISCOVERY_METHODS.txt",
-          "status": "INGESTED"
+          "kind": "text",
+          "status": "INGESTED_FULL DM-1..10"
         },
         {
-          "name": "INVESTIGATION_PROCEDURES.txt",
-          "status": "INGESTED"
+          "name": "DISCOVERY_METHODS.pdf",
+          "kind": "pdf",
+          "status": "INGESTED via txt"
         },
         {
-          "name": "theories.txt",
-          "status": "INGESTED \u2014 mostly Janet name-collision notes"
-        },
-        {
-          "name": "MY THEORIES.pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "File_01_Full THEORIES.pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "Peter Simel = J-WPS / Just1.pdf",
-          "status": "TITLE \u2014 PBP CONTRADICTED track"
+          "name": "ECHO SWARM.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX ops"
         },
         {
           "name": "Epstein-Maxwell-timeline.pdf",
+          "kind": "pdf",
           "status": "dup"
         },
         {
-          "name": "maindata.pdf / maindata part2.pdf",
+          "name": "File_01_Full THEORIES.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX large theory pack"
+        },
+        {
+          "name": "hidden epstein files archive.PDF",
+          "kind": "pdf",
           "status": "TITLE INDEX"
         },
         {
-          "name": "swarm agent PDFs",
-          "status": "TITLE INDEX ops"
+          "name": "INVESTIGATION_PROCEDURES.txt",
+          "kind": "text",
+          "status": "INGESTED_FULL process/roadblocks/swarm"
+        },
+        {
+          "name": "INVESTIGATION_PROCEDURES.pdf",
+          "kind": "pdf",
+          "status": "INGESTED via txt"
+        },
+        {
+          "name": "latest links details.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "maindata.pdf / maindata part2.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Michael Reiter - Wikipedia.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX RS career"
+        },
+        {
+          "name": "MY THEORIES.pdf",
+          "kind": "pdf",
+          "status": "INGESTED_FULL — 10 individual theory files + Nadia engine spine"
+        },
+        {
+          "name": "Peter Simel = J-WPS Office.pdf",
+          "kind": "pdf",
+          "status": "TITLE — PBP CONTRADICTED track"
+        },
+        {
+          "name": "Peter Simel = Just1.pdf",
+          "kind": "pdf",
+          "status": "TITLE — PBP CONTRADICTED track"
+        },
+        {
+          "name": "theories.txt",
+          "kind": "text",
+          "status": "INGESTED — Janet Epstein name-collision notes (JAFCO/Syracuse); no JE identity link"
         }
       ]
     },
     "recap": {
       "id": "1W-eWIFR5MGh568GrkaxDhVSpzrXNBd9w",
-      "files_title_index": [
+      "files": [
         {
-          "name": "masterrrrrr.pdf / masterrrrrr2222222.pdf",
+          "name": "Document_2026-03-27_22-10-24.pdf",
+          "kind": "pdf",
           "status": "TITLE INDEX large recap"
         },
         {
-          "name": "swarm api MASTER txt/pdf",
+          "name": "Document_2026-03-27_22-11-59*.pdf",
+          "kind": "pdf",
           "status": "TITLE INDEX"
         },
         {
-          "name": "start1..start10.pdf series",
+          "name": "Echo here. Lock-WPS Office.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Echo unbound, sweep111111.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "final.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "maindata.pdf / part2",
+          "kind": "pdf",
+          "status": "dup TITLE"
+        },
+        {
+          "name": "masterrrrrr.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX ~1.4MB master recap"
+        },
+        {
+          "name": "masterrrrrr2222222.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX ~880KB"
+        },
+        {
+          "name": "MSPDF.PDF / MSPDF(1).PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "start.pdf / start1..start10.pdf series",
+          "kind": "pdf",
+          "status": "TITLE INDEX series"
+        },
+        {
+          "name": "swarm api MASTER £££.txt",
+          "kind": "text",
+          "status": "DISTILL_REDACTED — ops swarm directives only; ANY API KEY STRIPPED BLOCKED"
+        },
+        {
+          "name": "swarm api MASTER £££.pdf",
+          "kind": "pdf",
+          "status": "TITLE — twin of txt; secrets blocked"
+        },
+        {
+          "name": "swarm api.pdf",
+          "kind": "pdf",
           "status": "TITLE INDEX"
         },
         {
           "name": "The Seed Story-linkedddddd.pdf",
-          "status": "TITLE INDEX"
-        },
-        {
-          "name": "MSPDF.PDF",
+          "kind": "pdf",
           "status": "TITLE INDEX"
         }
       ]
     },
     "Epstein's shit": {
       "id": "15E9DNfYwo2JvnEQsnt_yFvZIgKIUegmD",
-      "note": "Contains mixed code + SECRET env files \u2014 BLOCK secrets",
-      "blocked_never_ingest": [
-        "keys.env",
-        "god_tier_keys.env",
-        "fourth_round.env",
-        "Key_loader_beast.py (key loader)"
+      "files": [
+        {
+          "name": "live_test.py",
+          "kind": "folder",
+          "status": "SUBFOLDER"
+        },
+        {
+          "name": "blackhat_swarm.py / ghost_swarm.py / hydra_*.py / hunter.py / main.py / master_hydra.py / ultimate_*.py",
+          "kind": "code",
+          "status": "TITLE INDEX ops code — no key bodies"
+        },
+        {
+          "name": "core_directives.py / ethics.py / ImportOS.py / Importsql.py / Keywoard.py / RegexHuntingModule.py",
+          "kind": "code",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "deploy.sh / Run.bash / requirements.txt / index.html",
+          "kind": "ops",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "param.json / providers.json",
+          "kind": "json",
+          "status": "TITLE INDEX — no secrets body"
+        },
+        {
+          "name": "Epstein's 4.pdf",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "WPS Office PDF dumps (bash -c, import os, Implementing, Memo, etc.)",
+          "kind": "pdf",
+          "status": "TITLE INDEX code dumps"
+        },
+        {
+          "name": "keys.env / god_tier_keys.env / fourth_round.env",
+          "kind": "secret",
+          "status": "BLOCKED_NEVER_INGEST"
+        },
+        {
+          "name": "Key_loader_beast.py",
+          "kind": "code",
+          "status": "BLOCKED_KEY_LOADER"
+        },
+        {
+          "name": "master_vault.md.txt",
+          "kind": "text",
+          "status": "TITLE (5 bytes stub)"
+        }
       ],
-      "public_ok_title_index": [
-        "blackhat_swarm.py",
-        "ghost_swarm.py",
-        "hydra_*.py",
-        "hunter.py",
-        "main.py",
-        "deploy.sh",
-        "Epstein's 4.pdf",
-        "WPS Office PDF dumps",
-        "param.json",
-        "providers.json"
+      "note": "MIXED code + SECRET env — secrets BLOCKED"
+    },
+    "Middlebury (sub)": {
+      "id": "1seeFe5q1RWJz_2AD2jNYxu73Bz3QJP_d",
+      "files": [
+        {
+          "name": "Full text of Middlebury College magazine. Vol. 70, No.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX RS 1996 magazine"
+        },
+        {
+          "name": "ia801502...Newsletter_1996_V70N04_djvu.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX Internet Archive OCR"
+        },
+        {
+          "name": "Middlebury College magazine. Vol. 70, No.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Middlebury College Newspapers and Magazines IA.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Language in Archival and Library Catalogs.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        }
+      ]
+    },
+    "Palm Beach Pete (sub)": {
+      "id": "1PHSuhrN0gaeHeifdezAGxo6QAuyKMrNM",
+      "files": [
+        {
+          "name": "Peter Simel = J-WPS Office.pdf",
+          "kind": "pdf",
+          "status": "TITLE — CONTRADICTED identity track"
+        },
+        {
+          "name": "Peter Simel = Just1.pdf",
+          "kind": "pdf",
+          "status": "TITLE — CONTRADICTED identity track"
+        }
+      ]
+    },
+    "4 fuckers (sub)": {
+      "id": "1nOJICpShCh5ycN8BtPkRedvRVpbjjCVY",
+      "files": [
+        {
+          "name": "4 guys discussion.txt",
+          "kind": "text",
+          "status": "TITLE INDEX large discussion"
+        },
+        {
+          "name": "DETAILS ¿¿¿¿¿¿¿¿¿¿¿¿.txt",
+          "kind": "text",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "the real 4 men who they tried to hide.txt",
+          "kind": "text",
+          "status": "INGESTED — Nuara / Mikeladze / Caputo / Leonov bookmark links (noise filter)"
+        },
+        {
+          "name": "salvatore nuara nypd epstein Google Search*.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX"
+        },
+        {
+          "name": "Zurab Mikeladze Chelyabinsk Ballet.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX bookmark"
+        },
+        {
+          "name": "start swarm new convo.txt",
+          "kind": "text",
+          "status": "TITLE INDEX ops"
+        },
+        {
+          "name": "OJ_C_202402237_RO_TXT.PDF",
+          "kind": "pdf",
+          "status": "TITLE INDEX foreign-lang dump"
+        }
       ]
     }
   },
+  "blocked_secrets": [
+    {
+      "name": "keys.env",
+      "folder": "Epstein's shit",
+      "status": "BLOCKED_NEVER_INGEST"
+    },
+    {
+      "name": "god_tier_keys.env",
+      "folder": "Epstein's shit",
+      "status": "BLOCKED_NEVER_INGEST"
+    },
+    {
+      "name": "fourth_round.env",
+      "folder": "Epstein's shit",
+      "status": "BLOCKED_NEVER_INGEST"
+    },
+    {
+      "name": "Key_loader_beast.py",
+      "folder": "Epstein's shit",
+      "status": "BLOCKED_KEY_LOADER"
+    },
+    {
+      "name": "swarm api MASTER (embedded sk- key fragment)",
+      "folder": "recap",
+      "status": "BLOCKED_SECRET_REDACTED — distill text only, key stripped"
+    }
+  ],
+  "document_distills": [
+    {
+      "doc_id": "DOC-CORE",
+      "source": "The Epstein Maxwell True Story CORE.txt",
+      "folder": "Epstein specific",
+      "status": "INGESTED",
+      "summary": "Operator solo report 2020–2023: Eastern feeder chain Zuzana recruiter → Peter fixer/avionics → Nadia pilot → Ghislaine heir → Epstein front → Wexner cash → Acosta NPA shield → cleanup-adjacent deaths. Dialect bleed Nadazia→Lolita. Drive wipe Dec 2025 noted. Public RS anchors: Maxwell death 1991, NPA 2008, MCC 2019, GMX conviction, Brunel 2022, named survivors. Operator MAYBE layers: staged physics, body-double media claims, intel inheritance framing.",
+      "people_named": [
+        "Zuzana Nováková",
+        "Peter Marcinko",
+        "Nadia Marcinko",
+        "Ghislaine Maxwell",
+        "Robert Maxwell",
+        "Les Wexner",
+        "Jean-Luc Brunel",
+        "Alexander Acosta",
+        "Bill Clinton",
+        "Hillary Clinton",
+        "Mark Middleton",
+        "Virginia Giuffre",
+        "Thysia Huisman",
+        "Courtney Soerensen",
+        "Maria Farmer",
+        "Annie Farmer",
+        "Chauntae Davies",
+        "Johanna Sjoberg",
+        "Sarah Ransome",
+        "Michelle Licata"
+      ],
+      "tag_split": "RS events mixed with operator MAYBE framing — keep tags"
+    },
+    {
+      "doc_id": "DOC-PART1-5",
+      "source": "PART1..PART5.txt",
+      "folder": "Epstein specific",
+      "status": "INGESTED",
+      "summary": "Split of CORE: discovery process, piece-by-piece log, complete timeline 1980s–2026, methods, discoveries web.",
+      "tag_split": "same as CORE"
+    },
+    {
+      "doc_id": "DOC-DM",
+      "source": "DISCOVERY_METHODS.txt",
+      "folder": "Hypothesis",
+      "status": "INGESTED",
+      "summary": "DM-1 Wexner–Maxwell crossover · DM-2 Dalton kompromat origin · DM-3 viral I-95 clip zero-trace · DM-4 1996 Middlebury ad nickname · DM-5 Semel name mashup · DM-6 Wheatley/Engoron · DM-7 Elwell–Reiter promotion · DM-8 Dubai container pivot · DM-9 Nadia visa/Karin pipeline · DM-10 swarm vs refusals. Methods are investigation process; claim truth separate.",
+      "tag_split": "METHOD RS · CLAIMS yellow/MAYBE · PBP identity CONTRADICTED"
+    },
+    {
+      "doc_id": "DOC-PROC",
+      "source": "INVESTIGATION_PROCEDURES.txt",
+      "folder": "Hypothesis",
+      "status": "INGESTED",
+      "summary": "Processes, roadblocks/refusals/gaslighting log, swarm-building research, evolution protocols, comprehensive synthesis 2020–2026. Ops plane SW-07. No secrets bodies.",
+      "tag_split": "OPS method"
+    },
+    {
+      "doc_id": "DOC-MY-THEORIES",
+      "source": "MY THEORIES.pdf",
+      "folder": "Hypothesis",
+      "status": "INGESTED_FULL",
+      "summary": "Operator individual theories (10 file blocks): (1) Trigger lock / memory vault (2) 1987 Pergamon ads (3) Nadia engine + dialect (4) 2008 Acosta shield (5) Suicide cluster cleanup (6) Dubai pivot Kintetsu (7) Drive wipe Dec 2025 (8) Brovary ghost quote Zuzana (9) 3.5M redacts Mar 2026 (10) Full grind summary. Spine: Nadia as continuity engine; Epstein as front; Maxwell seed; Acosta shield; post-2019 logistics pivot. All stored as operator yellow/MAYBE except RS anchors.",
+      "individual_theory_ids": [
+        "TH-01-TRIGGER",
+        "TH-02-PERGAMON",
+        "TH-03-NADIA-ENGINE",
+        "TH-04-ACOSTA-SHIELD",
+        "TH-05-SUICIDE-CLUSTER",
+        "TH-06-DUBAI-PIVOT",
+        "TH-07-DRIVE-WIPE",
+        "TH-08-BROVARY",
+        "TH-09-REDACTS-2026",
+        "TH-10-GRIND-SUMMARY"
+      ],
+      "tag_split": "operator theories · yellow unless RS date/event"
+    },
+    {
+      "doc_id": "DOC-THEORIES-TXT",
+      "source": "theories.txt",
+      "folder": "Hypothesis",
+      "status": "INGESTED",
+      "summary": "Janet Epstein name-collision research: JAFCO Philanthropy Director; Syracuse Advocacy Center director; Dr. Janet Coope-Epstein. Explicit note: no known link to Jeffrey Epstein. Syracuse DOJ tuition notes re pilot's daughter Visoski (public reporting).",
+      "tag_split": "name collision hygiene — not JE identity"
+    },
+    {
+      "doc_id": "DOC-IA-LINK",
+      "source": "epstein all pdfs archive link.txt",
+      "folder": "Epstein specific",
+      "status": "INGESTED",
+      "summary": "Internet Archive EpsteinDocs base URL.",
+      "tag_split": "RS public archive"
+    },
+    {
+      "doc_id": "DOC-4MEN",
+      "source": "the real 4 men who they tried to hide.txt",
+      "folder": "4 fuckers",
+      "status": "INGESTED",
+      "summary": "Bookmark set: Salvatore Nuara (VS orbit articles), Zurab Mikeladze (Chelyabinsk ballet), Caputo clan Argentina press, Leonid Leonov literary noise filter. Operator noise/filter bookmarks — not closed claims.",
+      "tag_split": "MAYBE bookmarks / noise filter"
+    },
+    {
+      "doc_id": "DOC-SWARM-MASTER",
+      "source": "swarm api MASTER (redacted)",
+      "folder": "recap",
+      "status": "DISTILL_REDACTED",
+      "summary": "Ops swarm directives, agentic loop architecture notes, Echo persona prompts. ANY embedded API keys REDACTED and NEVER re-exported. Method validity ≠ claim truth.",
+      "tag_split": "OPS only · secrets blocked"
+    }
+  ],
   "public_archive_url": "https://ia600705.us.archive.org/21/items/epsteindocs/"
 }
