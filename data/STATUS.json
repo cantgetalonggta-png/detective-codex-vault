@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-09-11T10:10Z",
-  "version": "2.0.0-globe-desk",
+  "as_of": "2026-09-11T10:23Z",
+  "version": "3.0.0-encyclopedia",
   "dual_persist": {
     "github": {
       "repo": "cantgetalonggta-png/detective-codex-vault",
@@ -68,17 +68,23 @@
     "AI photoreal of victims",
     "bulk secret ingest"
   ],
-  "app": "detective-codex-v2",
+  "app": "investigation-encyclopedia",
   "port": 8080,
   "meridian": "RETIRED",
   "app_ports": {
     "8080": "codex v2 globe-desk live"
   },
   "features": [
-    "book/RPG chapters",
-    "command console",
-    "orthographic globe layer",
-    "hypothesis constellation",
-    "FULL_EXPORT wired"
-  ]
+    "plain encyclopedia index",
+    "no video-game UI",
+    "no command console",
+    "hypotheses+theories index",
+    "15min multi-agent audio panel"
+  ],
+  "audio": {
+    "file": "audio/theories-plausibility-panel-15min.mp3",
+    "duration_approx": "15m44s",
+    "focus": "hypotheses and operator theories plausibility only",
+    "drive_folder_id": "1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d"
+  }
 }
