@@ -6,14 +6,19 @@
       "repo": "cantgetalonggta-png/detective-codex-vault",
       "url": "https://github.com/cantgetalonggta-png/detective-codex-vault",
       "prior_status": "PRESENT (README, app.py, FULL_EXPORT, drive distill) as of 2026-09-11T09:48Z",
-      "this_run": "RE-PUSH v1.2.0-deep"
+      "this_run": "VERIFIED push fa95fec + release codex-v1.2.0-deep"
     },
     "drive": {
       "folder": "detective-codex-2026-09-11",
       "id": "1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d",
       "url": "https://drive.google.com/drive/folders/1jO2N8j9wJwJzF-Am1YJGK8ccuNkQdL9d",
       "prior_status": "FOLDER EXISTS BUT WAS EMPTY \u2014 root cause of 'nothing on Drive'",
-      "this_run": "UPLOAD all export artifacts now"
+      "this_run": "FOLDER WRITABLE (ping+pointers uploaded). Full file bodies blocked by MCP FS isolation (shell writes invisible to Drive upload). GitHub release is authoritative body store; Drive holds index pointers + status names.",
+      "pointers": [
+        "https://github.com/cantgetalonggta-png/detective-codex-vault",
+        "https://github.com/cantgetalonggta-png/detective-codex-vault/releases/tag/codex-v1.2.0-deep",
+        "https://raw.githubusercontent.com/cantgetalonggta-png/detective-codex-vault/main/data/FULL_EXPORT.json"
+      ]
     },
     "why_user_saw_nothing": [
       "GitHub repo DID have files; user may not have checked cantgetalonggta-png/detective-codex-vault",
@@ -65,5 +70,9 @@
   ],
   "app": "detective-codex",
   "port": 8502,
-  "meridian": "RETIRING"
+  "meridian": "RETIRING",
+  "app_ports": {
+    "8502": "existing process 200",
+    "8503": "codex v1.2 fresh 200"
+  }
 }
