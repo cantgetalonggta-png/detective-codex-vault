@@ -1,24 +1,15 @@
-name: Deploy static book
+name: Pages note
 on:
   push:
     branches: [main]
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
+  workflow_dispatch:
+# Pages is published from branch `main` (Deploy from a branch).
+# Do NOT call actions/deploy-pages here — that API 404s unless
+# Settings → Pages → Source is set to GitHub Actions.
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  note:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - run: |
+          echo "GitHub Pages source must be: Deploy from a branch → main → / (root) or /docs"
+          echo "Custom actions/deploy-pages is disabled so it cannot overwrite branch Pages."
