@@ -1,21 +1,16 @@
 # Investigation Book (vault-only)
 
-Interactive book UI for the operator vault. **Source of truth:** `data/FULL_EXPORT.json` only.
+Static interactive book generated from `data/FULL_EXPORT.json`.
 
-## Run
+## Open (no login)
+- GitHub Pages: https://cantgetalonggta-png.github.io/detective-codex-vault/
+- Repo: https://github.com/cantgetalonggta-png/detective-codex-vault
+
+## Local
 ```bash
-streamlit run app.py --server.port 8080 --server.address 0.0.0.0 --server.headless true
+python3 serve_book.py
 ```
-
-## Structure
-- Front matter (cover, how to read, TOC)
-- Part I Narrative (spine, control rules)
-- Part II Your theories (TH-01…TH-10)
-- Part III Hypotheses (HYP-*)
-- Part IV Issues & findings (gaps, contradictions, confirmed, docs)
-- Part V Entities (people, orgs, places, arcs)
-- Part VI Time & method (timeline, logic/DM/BC-PIPE)
-- Back matter (theory links, limits, colophon)
+Serves `docs/index.html` on port 8080.
 
 ## Ceiling
 Public metadata only · no secrets · PBP identity contradicted · MAYBE ≠ fact
